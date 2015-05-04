@@ -9,6 +9,8 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
+import com.bsalm.vaporguide.filters.CORSFilter;
+
 public class Initializer implements WebApplicationInitializer {
 
 	private static final String DISPATCHER_SERVLET_NAME = "dispatcher";
@@ -24,6 +26,9 @@ public class Initializer implements WebApplicationInitializer {
 		Dynamic servlet = servletContext.addServlet(DISPATCHER_SERVLET_NAME,
 				new DispatcherServlet(ctx));
 		servlet.addMapping("/");
+		
+		servletContext.addFilter("corsFilter", new CORSFilter());
+		
 		servlet.setLoadOnStartup(1);
 	}
 
