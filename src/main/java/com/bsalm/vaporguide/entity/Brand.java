@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "brand")
@@ -23,7 +24,12 @@ public class Brand implements Serializable {
 	private int id;
 	
 	@Column(name = "name")
+	@NotNull
 	private String name;
+	
+	//fields
+	@Column(name = "website")
+	private String website;
 	
 	//child tables 
 	@OneToMany(mappedBy="brand_id", fetch=FetchType.LAZY, orphanRemoval=true) 
@@ -47,6 +53,14 @@ public class Brand implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getWebsite() {
+		return website;
+	}
+
+	public void setWebsite(String website) {
+		this.website = website;
 	}
 
 	public List<Hardware> getHardware() {
