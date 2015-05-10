@@ -22,7 +22,7 @@ import com.bsalm.vaporguide.services.JuiceReviewService;
 import com.bsalm.vaporguide.validation.JuiceReviewValidator;
 
 @RestController
-@RequestMapping(value="/juiceReview")
+@RequestMapping(value="/juicereview")
 public class JuiceReviewController {
 
 	@Autowired
@@ -42,7 +42,7 @@ public class JuiceReviewController {
 	}
 
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
-	public JuiceReview juiceReviewListPage(@PathVariable Integer id) {
+	public JuiceReview getJuiceReview(@PathVariable Integer id) {
 		return juiceReviewService.findById(id);
 	}
 

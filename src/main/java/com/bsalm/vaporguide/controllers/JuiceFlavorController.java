@@ -20,12 +20,12 @@ public class JuiceFlavorController {
 	private JuiceFlavorService juiceFlavorService;
 
 	@RequestMapping(value="/", method=RequestMethod.GET)
-	public List<JuiceFlavor> getAllJuiceReviews() {
+	public List<JuiceFlavor> getAllJuiceFlavors() {
 		return juiceFlavorService.findAll();
 	}
 
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
-	public JuiceFlavor juiceReviewListPage(@PathVariable Integer id) {
+	public JuiceFlavor getJuiceFlavor(@PathVariable Integer id) {
 		return juiceFlavorService.findById(id);
 	}
 }
