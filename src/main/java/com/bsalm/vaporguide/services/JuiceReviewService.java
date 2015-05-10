@@ -23,7 +23,7 @@ public interface JuiceReviewService {
 	
 	//Updates
 	
-	public JuiceReview update(JuiceReview artist) throws JuiceReviewNotFoundException;
+	public JuiceReview update(JuiceReview juiceReview) throws JuiceReviewNotFoundException;
 	
 	//Deletes
 	
