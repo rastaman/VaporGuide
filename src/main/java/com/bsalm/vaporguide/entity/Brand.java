@@ -23,7 +23,7 @@ public class Brand implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "name")
+	@Column(name = "name", unique = true)
 	@NotNull
 	private String name;
 	
