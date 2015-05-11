@@ -2,7 +2,6 @@ package com.bsalm.vaporguide.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.bsalm.vaporguide.entity.JuiceReview;
 import com.bsalm.vaporguide.entity.Shop;
 
 public interface ShopRepository extends JpaRepository<Shop, Integer> {
