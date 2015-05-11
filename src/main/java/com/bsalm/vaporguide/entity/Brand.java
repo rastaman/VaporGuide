@@ -32,10 +32,10 @@ public class Brand implements Serializable {
 	private String website;
 	
 	//child tables 
-	@OneToMany(mappedBy="brand_id", fetch=FetchType.LAZY, orphanRemoval=true) 
+	@OneToMany(mappedBy="brand_id", fetch=FetchType.EAGER, orphanRemoval=true) 
 	private List<Hardware> hardware;
 	
-	@OneToMany(mappedBy="brand_id", fetch=FetchType.LAZY, orphanRemoval=true) 
+	@OneToMany(mappedBy="brand_id", fetch=FetchType.EAGER, orphanRemoval=true) 
 	private List<Juice> juice;
 	
 	//getters / setters

@@ -7,79 +7,63 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bsalm.vaporguide.entity.JuiceReview;
-import com.bsalm.vaporguide.exceptions.JuiceReviewNotFoundException;
-import com.bsalm.vaporguide.repositories.JuiceReviewRepository;
+import com.bsalm.vaporguide.entity.Juice;
+import com.bsalm.vaporguide.exceptions.JuiceNotFoundException;
+import com.bsalm.vaporguide.repositories.JuiceRepository;
 
 @Service
-public class JuiceServiceImpl implements JuiceReviewService {
+public class JuiceServiceImpl implements JuiceService {
 	
 	@Resource
-	private JuiceReviewRepository juiceReviewRepository;
+	private JuiceRepository juiceRepository;
 
 	@Transactional
-	public JuiceReview create(JuiceReview juiceReview) {
-		JuiceReview createdJuiceReview = juiceReview;
-		return juiceReviewRepository.save(createdJuiceReview);
+	public Juice create(Juice juice) {
+		Juice createdJuice = juice;
+		return juiceRepository.save(createdJuice);
 	}
 	
 	@Transactional
-	public JuiceReview findById(int id) {
-		return juiceReviewRepository.findOne(id);
+	public Juice findById(int id) {
+		return juiceRepository.findOne(id);
 	}
 	
 	@Transactional
-	public List<JuiceReview> findByName(String name) {
-		//return juiceReviewRepository.findByName(name);
+	public List<Juice> findByName(String name) {
+		//return juiceRepository.findByName(name);
 		return null;
 	}
 
-	@Transactional(rollbackFor=JuiceReviewNotFoundException.class)
-	public JuiceReview delete(int id) throws JuiceReviewNotFoundException 
+	@Transactional(rollbackFor=JuiceNotFoundException.class)
+	public Juice delete(int id) throws JuiceNotFoundException 
 	{
-		JuiceReview deletedJuiceReview = juiceReviewRepository.findOne(id);
+		Juice deletedJuice = juiceRepository.findOne(id);
 		
-		if (deletedJuiceReview == null)
-			throw new JuiceReviewNotFoundException();
+		if (deletedJuice == null)
+			throw new JuiceNotFoundException();
 		
-		juiceReviewRepository.delete(deletedJuiceReview);
-		return deletedJuiceReview;
+		juiceRepository.delete(deletedJuice);
+		return deletedJuice;
 	}
 
 	@Transactional
-	public List<JuiceReview> findAll() {
-		return juiceReviewRepository.findAll();
+	public List<Juice> findAll() {
+		return juiceRepository.findAll();
 	}
 
-	@Transactional(rollbackFor=JuiceReviewNotFoundException.class)
-	public JuiceReview update(JuiceReview juiceReview) throws JuiceReviewNotFoundException 
+	@Transactional(rollbackFor=JuiceNotFoundException.class)
+	public Juice update(Juice juice) throws JuiceNotFoundException 
 	{
-		JuiceReview updatedJuiceReview = juiceReviewRepository.findOne(juiceReview.getId());
+		Juice updatedJuice = juiceRepository.findOne(juice.getId());
 		
-		if (updatedJuiceReview == null)
-			throw new JuiceReviewNotFoundException();
+		if (updatedJuice == null)
+			throw new JuiceNotFoundException();
 		
-		updatedJuiceReview.setRating(juiceReview.getRating());
+		//set fields
 		
-		updatedJuiceReview.setReview(juiceReview.getReview());
+		juiceRepository.save(updatedJuice);
 		
-		updatedJuiceReview.setFlavor(juiceReview.getFlavor());
-		updatedJuiceReview.setVapor(juiceReview.getVapor());
-		updatedJuiceReview.setThroat(juiceReview.getThroat());
-		updatedJuiceReview.setWorth(juiceReview.getWorth());
-		
-		updatedJuiceReview.setVg(juiceReview.getVg());
-		updatedJuiceReview.setPg(juiceReview.getPg());
-		updatedJuiceReview.setNic(juiceReview.getNic());
-		updatedJuiceReview.setWorth(juiceReview.getSteep());
-		
-		updatedJuiceReview.setFlavorOne(juiceReview.getFlavorOne());
-		updatedJuiceReview.setFlavorTwo(juiceReview.getFlavorTwo());
-		updatedJuiceReview.setFlavorTwo(juiceReview.getFlavorThree());
-		
-		juiceReviewRepository.save(updatedJuiceReview);
-		
-		return updatedJuiceReview;
+		return updatedJuice;
 	}
 	
 }

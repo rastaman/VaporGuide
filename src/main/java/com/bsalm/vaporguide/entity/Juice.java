@@ -34,12 +34,50 @@ public class Juice {
 	private int brand_id;
 	
 	// referencing tables
-	@OneToMany(mappedBy="juice", fetch=FetchType.LAZY, orphanRemoval=true) 
-	private List<JuiceReview> juiceReviews;
+//	@OneToMany(mappedBy="juice", fetch=FetchType.LAZY, orphanRemoval=true) 
+//	private List<JuiceReview> juiceReviews;
 	
 	//fields
 	@Column(name = "name")
 	private String name;
 
+	public int getId() {
+		return id;
+	}
 
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+//	public Brand getBrand() {
+//		return brand;
+//	}
+//
+//	public void setBrand(Brand brand) {
+//		this.brand = brand;
+//	}
+
+	public int getBrand_id() {
+		return brand_id;
+	}
+
+	public void setBrand_id(int brand_id) {
+		this.brand_id = brand_id;
+	}
+
+//	public List<JuiceReview> getJuiceReviews() {
+//		return juiceReviews;
+//	}
+//
+//	public void setJuiceReviews(List<JuiceReview> juiceReviews) {
+//		this.juiceReviews = juiceReviews;
+//	}
 }
