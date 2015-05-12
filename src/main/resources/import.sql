@@ -198,7 +198,7 @@ INSERT into vaporguide.brand(name,website) values ('Bomb Squad','http://localvap
 INSERT into vaporguide.brand(name,website) values ('Bomb Vapor','http://bombvapor.com/');
 INSERT into vaporguide.brand(name,website) values ('Bombay Vaping','http://store.bombayvaping.com/');
 INSERT into vaporguide.brand(name,website) values ('Bombies','http://www.bombies.com/');
-INSERT into vaporguide.brand(name,website) values ('Boom Sap eJuice','http://www.boomsap.com/');
+INSERT into vaporguide.brand(name,website) values ('Boom Sap','http://www.boomsap.com/');
 INSERT into vaporguide.brand(name,website) values ('Boondock Vapes','http://www.boondockvapes.com');
 INSERT into vaporguide.brand(name,website) values ('Boosted E-Juice','http://www.boostedejuice.com/');
 INSERT into vaporguide.brand(name,website) values ('Boosted Vapor','http://www.boostedvapor.com');
