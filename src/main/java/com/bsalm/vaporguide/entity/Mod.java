@@ -21,17 +21,20 @@ public class Mod extends Hardware{
 //	@Column(name = "combo")
 //	private String combo;
 	
+	@Column(name = "batteryType")
+	private String batteryType;
+	
 	@Column(name = "max_wattage")
-	private int maxWattage;
+	private Integer maxWattage;
 	
 	@Column(name = "min_wattage")
-	private int minWattage;
+	private Integer minWattage;
 	
 	@Column(name = "width")
-	private int width;
+	private Integer width;
 	
 	@Column(name = "height")
-	private int height;
+	private Integer height;
 	
 	@Column(name = "depth")
 	private String depth;

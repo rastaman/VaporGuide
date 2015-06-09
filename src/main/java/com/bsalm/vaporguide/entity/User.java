@@ -19,7 +19,7 @@ public class User implements Serializable {
 	// identifiers
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	
 	@Column(name = "name", unique=true)
 	private String name;
@@ -34,11 +34,11 @@ public class User implements Serializable {
 	@OneToMany(mappedBy="user_id", fetch=FetchType.LAZY, orphanRemoval=true) 
 	private List<ShopReview> juiceReviews;
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

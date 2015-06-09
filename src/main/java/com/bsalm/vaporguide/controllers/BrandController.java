@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bsalm.vaporguide.entity.Brand;
+import com.bsalm.vaporguide.entity.Juice;
 import com.bsalm.vaporguide.entity.JuiceFlavor;
 import com.bsalm.vaporguide.services.BrandService;
 import com.bsalm.vaporguide.services.JuiceFlavorService;
@@ -24,6 +25,11 @@ public class BrandController {
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public List<Brand> getAllBrands() {
 		return brandService.findAll();
+	}
+	
+	@RequestMapping(value="/juice/{brand_id}", method=RequestMethod.GET)
+	public List<Juice> getBrandsJuice(@PathVariable Integer brand_id) {
+		return brandService.findAllJuice(brand_id);
 	}
 
 	//TODO function to get brands that have a juice

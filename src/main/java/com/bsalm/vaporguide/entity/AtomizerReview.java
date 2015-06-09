@@ -13,9 +13,9 @@ public class AtomizerReview extends HardwareReview{
 	private String type;
 	
 	@Column(name = "flavor")
-	private int flavor;
+	private Integer flavor;
 	
 	@Column(name = "vapor")
-	private int vapor;
+	private Integer vapor;
 
 }

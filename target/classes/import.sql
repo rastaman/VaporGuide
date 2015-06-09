@@ -1,5 +1,14 @@
 #import.sql file
 
+#Shops
+insert into vaporguide.shop(name, googleplaceid, address, latitude, longitude) values ('Vapor Place Lounge / Vape Shop', null, '119 N Main St, Crystal Lake, IL 60014, United States','42.244293', '-88.315871');
+insert into vaporguide.shop(name, googleplaceid, address, latitude, longitude) values ('Vape Amore''', null, '540 E Terra Cotta Ave, Crystal Lake, IL 60014, United States','42.249197', '-88.30057');
+insert into vaporguide.shop(name, googleplaceid, address, latitude, longitude) values ('Vapor Hut LLC', 'ChIJXaaYI6JyD4gRw7hHtwfwVBY', '30 N Williams St, Crystal Lake, IL 60014, United States', '42.242224', '-88.318638');
+insert into vaporguide.shop(name, googleplaceid, address, latitude, longitude) values ('No Leaf Vapor', 'ChIJb9b3dVVtD4gR1Ji9VsEwaJs', '1 Crystal Lake Plaza, Crystal Lake, IL 60014, United States', '42.22789', '-88.327246');
+insert into vaporguide.shop(name, googleplaceid, address, latitude, longitude) values ('Cigtechs', 'ChIJA5P8yrETD4gRIOqMDNuAZ_Q', '4069 W Algonquin Rd, Algonquin, IL 60102, United States', '42.174265', '-88.369946');
+
+#Shop Reviews
+
 #Juice Flavors
 insert into vaporguide.JuiceFlavor(name) values ('Beverage');
 insert into vaporguide.JuiceFlavor(name) values ('Candy');
@@ -24,7 +33,6 @@ insert into vaporguide.JuiceFlavor(name) values ('Yogurt');
 insert into vaporguide.User values ( null, 'bmsalm');
 
 #Brands
-INSERT into vaporguide.brand(name,website) values ('(313) Juice','http://313juice.com/');
 INSERT into vaporguide.brand(name,website) values ('101 Vape','http://101vape.com/');
 INSERT into vaporguide.brand(name,website) values ('10th Planet E Juice','http://10thplanetejuice.com/');
 INSERT into vaporguide.brand(name,website) values ('12 Angels','http://vape12angel.com/');
@@ -14500,6 +14508,6 @@ INSERT into vaporguide.juice(name,brand_id) values ('Zuro''s Cereal', coalesce((
 INSERT into vaporguide.juice(name,brand_id) values ('Zuro''s Milk', coalesce((select id from vaporguide.brand where name = "Zuro's Milk"), 999999));
 
 #Juice Reviews
-insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavor_one, flavor_two, flavor_three) values(null, '1', '1', '8', 'My favorite cereal flavor.', '8', '7', '2', '6', '70', '30', '3', '0', '3', '9', '5'); 
-insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavor_one, flavor_two, flavor_three) values(null, '2', '1', '7', 'Good - but a little too eggy of a custard.', '7', '7', '2', '5', '70', '30', '3', '1', '6', '16', '5');
-insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavor_one, flavor_two, flavor_three) values(null, '2', '1', '9', 'Great flavor - wish it was cheaper though.', '9', '7', '2', '7', '70', '30', '3', '3', '5','16', null);
+insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId) values(null, '1', '1', '8', 'My favorite cereal flavor.', '8', '7', '2', '6', '70', '30', '3', '0', '3', '9', '5'); 
+insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId) values(null, '2', '1', '7', 'Good - but a little too eggy of a custard.', '7', '7', '2', '5', '70', '30', '3', '1', '6', '16', '5');
+insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId) values(null, '2', '1', '9', 'Great flavor - wish it was cheaper though.', '9', '7', '2', '7', '70', '30', '3', '3', '5','16', null);

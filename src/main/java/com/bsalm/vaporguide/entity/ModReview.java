@@ -13,9 +13,9 @@ public class ModReview extends HardwareReview{
 	private String type;
 	
 	@Column(name = "ergonomics")
-	private int ergonomics;
+	private Integer ergonomics;
 	
 	@Column(name = "battery_life")
-	private int batteryLife;
+	private Integer batteryLife;
 
 }

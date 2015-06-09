@@ -52,9 +52,9 @@ public class JuiceReviewValidator implements Validator {
 		if (! integerBetween(1, 1825, input.getSteep()))
 			errors.rejectValue("steep", "value out of bounds");
 		
-		input.getFlavorOne();
-		input.getFlavorTwo();
-		input.getFlavorThree();
+//		input.getFlavorOne();
+//		input.getFlavorTwo();
+//		input.getFlavorThree();
 		
 		//passed validations - check db for duplicates
 //		if(errors.getErrorCount() == 0){

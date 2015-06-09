@@ -17,7 +17,7 @@ public class HardwareReview {
 	// identifiers 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
+	private Integer id;
 
 	// parent tables
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -25,28 +25,31 @@ public class HardwareReview {
 	private Hardware hardware;
 
 	@Column(name = "hardware_id")
-	private int hardware_id;
+	private Integer hardware_id;
 
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="user_id", referencedColumnName = "id", insertable = false, updatable = false)
 	private User user;
 
 	@Column(name = "user_id")
-	private int user_id;
+	private Integer user_id;
 
 	// rating fields 
 	@Column(name = "overall_rating")
-	private int OverallRating;
+	private Integer OverallRating;
 	
 	@Column(name = "machine_quality")
-	private int MachineQuality;
+	private Integer MachineQuality;
 	
 	@Column(name = "materials_quality")
-	private int MaterialsQuality;
+	private Integer MaterialsQuality;
+	
+	@Column(name = "design_quality")
+	private Integer DesignQuality;
 	
 	//info fields	
 	@Column(name = "ownership_duration")
-	private int OwnershipDuration;
+	private Integer OwnershipDuration;
 
 
 }

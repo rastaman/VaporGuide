@@ -7,12 +7,21 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "juicereview")
+@Table(name = "juicereview", 
+	indexes = {
+        @Index(columnList = "juice_id", name = "juicereview_juiceid_idx")
+  	}, 
+  	uniqueConstraints = {
+		@UniqueConstraint(columnNames={"juice_id", "user_id"})
+	}
+)
 public class JuiceReview 
 {
 	
@@ -21,123 +30,121 @@ public class JuiceReview
 	// identifiers 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
+	private Integer id;
 
 	// parent tables
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="juice_id", referencedColumnName = "id", insertable = false, updatable = false)
 	private Juice juice;
-
-	@Column(name = "juice_id")
-	private int juice_id;
+	@Column
+	private Integer juice_id;
 
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="user_id", referencedColumnName = "id", insertable = false, updatable = false)
 	private User user;
-
-	@Column(name = "user_id")
-	private int user_id;
+	@Column
+	private Integer user_id;
 
 	//rating
 	@Column(name = "rating")
-	private int rating;
+	private Integer rating;
 	
 	@Column(name = "review")
 	private String review;
 	
 	@Column(name = "flavor")
-	private int flavor;
+	private Integer flavor;
 	
 	@Column(name = "vapor")
-	private int vapor;
+	private Integer vapor;
 	
 	@Column(name = "throat")
-	private int throat;
+	private Integer throat;
 	
 	@Column(name = "worth")
-	private int worth;
+	private Integer worth;
 	
 	//preferences
 	@Column(name = "vg")
-	private int vg;
+	private Integer vg;
 	
 	@Column(name = "pg")
-	private int pg;
+	private Integer pg;
 	
 	@Column(name = "nic")
-	private int nic;
+	private Integer nic;
 	
 	@Column(name = "steep")
-	private int steep;
+	private Integer steep;
 	
 	// flavor characteristics 
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="flavor_one", referencedColumnName = "id", insertable = false, updatable = false)
-	private JuiceFlavor flavorOne;
+//	@ManyToOne(fetch=FetchType.LAZY)
+//	@JoinColumn(name="flavorOneId", referencedColumnName = "id", insertable = false, updatable = false)
+//	private JuiceFlavor flavorOne;
 	
-	@Column
-	private int flavor_one;
+	@Column(nullable=false)
+	private Integer flavorOneId;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="flavor_two", referencedColumnName = "id", insertable = false, updatable = false)
-	private JuiceFlavor flavorTwo;
+//	@ManyToOne(fetch=FetchType.LAZY)
+//	@JoinColumn(name="flavorTwoId", referencedColumnName = "id", insertable = false, updatable = false)
+//	private JuiceFlavor flavorTwo;
 	
-	@Column
-	private int flavor_two;
+	@Column(nullable=true)
+	private Integer flavorTwoId;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="flavor_three", referencedColumnName = "id", insertable = false, updatable = false)
-	private JuiceFlavor flavorThree; 
+//	@ManyToOne(fetch=FetchType.LAZY)
+//	@JoinColumn(name="flavorThreeId", referencedColumnName = "id", insertable = false, updatable = false)
+//	private JuiceFlavor flavorThree; 
 	
-	@Column
-	private int flavor_three;
+	@Column(nullable=true)
+	private Integer flavorThreeId;
 	
 	//getters / setters
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public Juice getJuice() {
-		return juice;
-	}
+//	public Juice getJuice() {
+//		return juice;
+//	}
+//
+//	public void setJuice(Juice juice) {
+//		this.juice = juice;
+//	}
 
-	public void setJuice(Juice juice) {
-		this.juice = juice;
-	}
-
-	public int getJuice_id() {
+	public Integer getJuice_id() {
 		return juice_id;
 	}
 
-	public void setJuice_id(int juice_id) {
+	public void setJuice_id(Integer juice_id) {
 		this.juice_id = juice_id;
 	}
 
-	public User getUser() {
-		return user;
-	}
+//	public User getUser() {
+//		return user;
+//	}
+//
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
 
-	public void setUser(User user) {
-		this.user = user;
-	}
-
-	public int getUser_id() {
+	public Integer getUser_id() {
 		return user_id;
 	}
 
-	public void setUser_id(int user_id) {
+	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
 	}
 
-	public int getRating() {
+	public Integer getRating() {
 		return rating;
 	}
 
-	public void setRating(int rating) {
+	public void setRating(Integer rating) {
 		this.rating = rating;
 	}
 
@@ -149,92 +156,116 @@ public class JuiceReview
 		this.review = review;
 	}
 
-	public int getFlavor() {
+	public Integer getFlavor() {
 		return flavor;
 	}
 
-	public void setFlavor(int flavor) {
+	public void setFlavor(Integer flavor) {
 		this.flavor = flavor;
 	}
 
-	public int getVapor() {
+	public Integer getVapor() {
 		return vapor;
 	}
 
-	public void setVapor(int vapor) {
+	public void setVapor(Integer vapor) {
 		this.vapor = vapor;
 	}
 
-	public int getThroat() {
+	public Integer getThroat() {
 		return throat;
 	}
 
-	public void setThroat(int throat) {
+	public void setThroat(Integer throat) {
 		this.throat = throat;
 	}
 
-	public int getWorth() {
+	public Integer getWorth() {
 		return worth;
 	}
 
-	public void setWorth(int worth) {
+	public void setWorth(Integer worth) {
 		this.worth = worth;
 	}
 
-	public int getVg() {
+	public Integer getVg() {
 		return vg;
 	}
 
-	public void setVg(int vg) {
+	public void setVg(Integer vg) {
 		this.vg = vg;
 	}
 
-	public int getPg() {
+	public Integer getPg() {
 		return pg;
 	}
 
-	public void setPg(int pg) {
+	public void setPg(Integer pg) {
 		this.pg = pg;
 	}
 
-	public int getNic() {
+	public Integer getNic() {
 		return nic;
 	}
 
-	public void setNic(int nic) {
+	public void setNic(Integer nic) {
 		this.nic = nic;
 	}
 
-	public int getSteep() {
+	public Integer getSteep() {
 		return steep;
 	}
 
-	public void setSteep(int steep) {
+	public void setSteep(Integer steep) {
 		this.steep = steep;
 	}
 
-	public JuiceFlavor getFlavorOne() {
-		return flavorOne;
+	public Integer getFlavorOneId() {
+		return flavorOneId;
 	}
 
-	public void setFlavorOne(JuiceFlavor flavorOne) {
-		this.flavorOne = flavorOne;
+	public void setFlavorOneId(Integer flavorOneId) {
+		this.flavorOneId = flavorOneId;
 	}
 
-	public JuiceFlavor getFlavorTwo() {
-		return flavorTwo;
+	public Integer getFlavorTwoId() {
+		return flavorTwoId;
 	}
 
-	public void setFlavorTwo(JuiceFlavor flavorTwo) {
-		this.flavorTwo = flavorTwo;
+	public void setFlavorTwoId(Integer flavorTwoId) {
+		this.flavorTwoId = flavorTwoId;
 	}
 
-	public JuiceFlavor getFlavorThree() {
-		return flavorThree;
+	public Integer getFlavorThreeId() {
+		return flavorThreeId;
 	}
 
-	public void setFlavorThree(JuiceFlavor flavorThree) {
-		this.flavorThree = flavorThree;
+	public void setFlavorThreeId(Integer flavorThreeId) {
+		this.flavorThreeId = flavorThreeId;
 	}
+
+//	public JuiceFlavor getFlavorOne() {
+//		return flavorOne;
+//	}
+//
+//	public void setFlavorOne(JuiceFlavor flavorOne) {
+//		this.flavorOne = flavorOne;
+//	}
+//
+//	public JuiceFlavor getFlavorTwo() {
+//		return flavorTwo;
+//	}
+//
+//	public void setFlavorTwo(JuiceFlavor flavorTwo) {
+//		this.flavorTwo = flavorTwo;
+//	}
+//
+//	public JuiceFlavor getFlavorThree() {
+//		return flavorThree;
+//	}
+//
+//	public void setFlavorThree(JuiceFlavor flavorThree) {
+//		this.flavorThree = flavorThree;
+//	}
 
 }

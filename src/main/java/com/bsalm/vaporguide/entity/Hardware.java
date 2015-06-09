@@ -23,7 +23,7 @@ public class Hardware {
 	// identifier
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	// parent tables
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -31,7 +31,7 @@ public class Hardware {
 	private Brand brand;
 	
 	@Column
-	private int brand_id;
+	private Integer brand_id;
 	
 	// referencing tables
 	@OneToMany(mappedBy="hardware", fetch=FetchType.LAZY, orphanRemoval=true) 

@@ -64,13 +64,32 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>4.3.8.Final</version>
 		</dependency>
-
+		
+		
+		<!-- Jadira Time -->
+		<dependency>
+    		<groupId>joda-time</groupId>
+    		<artifactId>joda-time</artifactId>
+    		<version>2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jadira.usertype</groupId>
+			<artifactId>usertype.core</artifactId>
+			<version>3.2.0.GA</version>
+		</dependency>
+		
+		
 		<!-- Jackson -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.1.2</version>
+			<version>2.5.3</version>
 		</dependency>
+		<dependency>
+  			<groupId>com.fasterxml.jackson.datatype</groupId>
+ 	 		<artifactId>jackson-datatype-hibernate4</artifactId>
+  			<version>2.5.3</version>
+		</dependency>   
 
 		<!-- AspectJ -->
 		<dependency>

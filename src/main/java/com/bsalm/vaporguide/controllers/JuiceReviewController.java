@@ -45,6 +45,11 @@ public class JuiceReviewController {
 	public JuiceReview getJuiceReview(@PathVariable Integer id) {
 		return juiceReviewService.findById(id);
 	}
+	
+	@RequestMapping(value="/juice/{id}", method=RequestMethod.GET)
+	public List<JuiceReview> getJuiceReviewByJuiceId(@PathVariable Integer id) {
+		return juiceReviewService.findByJuiceId(id);
+	}
 
 	@RequestMapping(value="/", method=RequestMethod.POST)
 	public JuiceReview createJuiceReview(@ModelAttribute @Valid JuiceReview juiceReview,

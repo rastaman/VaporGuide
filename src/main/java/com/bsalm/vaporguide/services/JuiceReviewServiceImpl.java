@@ -29,6 +29,11 @@ public class JuiceReviewServiceImpl implements JuiceReviewService {
 	}
 	
 	@Transactional
+	public List<JuiceReview> findByJuiceId(int id) {
+		return juiceReviewRepository.findByJuiceId(id);
+	}
+	
+	@Transactional
 	public List<JuiceReview> findByName(String name) {
 		//return juiceReviewRepository.findByName(name);
 		return null;
@@ -73,9 +78,9 @@ public class JuiceReviewServiceImpl implements JuiceReviewService {
 		updatedJuiceReview.setNic(juiceReview.getNic());
 		updatedJuiceReview.setWorth(juiceReview.getSteep());
 		
-		updatedJuiceReview.setFlavorOne(juiceReview.getFlavorOne());
-		updatedJuiceReview.setFlavorTwo(juiceReview.getFlavorTwo());
-		updatedJuiceReview.setFlavorTwo(juiceReview.getFlavorThree());
+//		updatedJuiceReview.setFlavorOne(juiceReview.getFlavorOne());
+//		updatedJuiceReview.setFlavorTwo(juiceReview.getFlavorTwo());
+//		updatedJuiceReview.setFlavorTwo(juiceReview.getFlavorThree());
 		
 		juiceReviewRepository.save(updatedJuiceReview);
 		

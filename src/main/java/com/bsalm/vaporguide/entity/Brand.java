@@ -10,20 +10,24 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "brand")
+@Table(name = "brand" ,indexes = {
+        @Index(columnList = "id", name = "brand_id_idx"),
+})
 public class Brand implements Serializable {
 
 	// identifiers 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	@Column(name = "id", unique = true, nullable = false)
+	private Integer id;
 	
-	@Column(name = "name", unique = true)
+	@Column(name = "name")
 	@NotNull
 	private String name;
 	
@@ -39,11 +43,11 @@ public class Brand implements Serializable {
 	private List<Juice> juice;
 	
 	//getters / setters
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -63,19 +67,19 @@ public class Brand implements Serializable {
 		this.website = website;
 	}
 
-	public List<Hardware> getHardware() {
-		return hardware;
-	}
-
-	public void setHardware(List<Hardware> hardware) {
-		this.hardware = hardware;
-	}
-
-	public List<Juice> getJuice() {
-		return juice;
-	}
-
-	public void setJuice(List<Juice> juice) {
-		this.juice = juice;
-	}	
+//	public List<Hardware> getHardware() {
+//		return hardware;
+//	}
+//
+//	public void setHardware(List<Hardware> hardware) {
+//		this.hardware = hardware;
+//	}
+//	
+//	public List<Juice> getJuice() {
+//		return juice;
+//	}
+//
+//	public void setJuice(List<Juice> juice) {
+//		this.juice = juice;
+//	}	
 }

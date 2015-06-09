@@ -8,6 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
@@ -16,14 +17,16 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "juice")
+@Table(name = "juice", indexes = {
+        @Index(columnList = "id", name = "juice_id_idx"),
+})
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Juice {
 
 	// identifier
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	// parent tables
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -31,21 +34,21 @@ public class Juice {
 	private Brand brand;
 	
 	@Column
-	private int brand_id;
+	private Integer brand_id;
 	
 	// referencing tables
-//	@OneToMany(mappedBy="juice", fetch=FetchType.LAZY, orphanRemoval=true) 
-//	private List<JuiceReview> juiceReviews;
+	@OneToMany(mappedBy="juice", fetch=FetchType.EAGER, orphanRemoval=true) 
+	private List<JuiceReview> juiceReviews;
 	
 	//fields
 	@Column(name = "name")
 	private String name;
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	
@@ -65,11 +68,11 @@ public class Juice {
 //		this.brand = brand;
 //	}
 
-	public int getBrand_id() {
+	public Integer getBrand_id() {
 		return brand_id;
 	}
 
-	public void setBrand_id(int brand_id) {
+	public void setBrand_id(Integer brand_id) {
 		this.brand_id = brand_id;
 	}
 
