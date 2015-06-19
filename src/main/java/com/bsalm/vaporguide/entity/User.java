@@ -24,6 +24,12 @@ public class User implements Serializable {
 	@Column(name = "name", unique=true)
 	private String name;
 	
+	@Column(name = "facebookId", unique=true)
+	private String facebookId;
+	
+	@Column(name = "currentFacebookToken", unique=true)
+	private String currentFacebookToken;
+	
 	// referencing tables
 	@OneToMany(mappedBy="user_id", fetch=FetchType.LAZY, orphanRemoval=true) 
 	private List<ShopReview> shopReviews;
@@ -50,27 +56,27 @@ public class User implements Serializable {
 		this.name = name;
 	}
 	
-	public List<ShopReview> getShopReviews() {
-		return shopReviews;
-	}
-
-	public void setShopReviews(List<ShopReview> shopReviews) {
-		this.shopReviews = shopReviews;
-	}
-
-	public List<ShopReview> getHardwareReviews() {
-		return hardwareReviews;
-	}
-
-	public void setHardwareReviews(List<ShopReview> hardwareReviews) {
-		this.hardwareReviews = hardwareReviews;
-	}
-
-	public List<ShopReview> getJuiceReviews() {
-		return juiceReviews;
-	}
-
-	public void setJuiceReviews(List<ShopReview> juiceReviews) {
-		this.juiceReviews = juiceReviews;
-	}
+//	public List<ShopReview> getShopReviews() {
+//		return shopReviews;
+//	}
+//
+//	public void setShopReviews(List<ShopReview> shopReviews) {
+//		this.shopReviews = shopReviews;
+//	}
+//
+//	public List<ShopReview> getHardwareReviews() {
+//		return hardwareReviews;
+//	}
+//
+//	public void setHardwareReviews(List<ShopReview> hardwareReviews) {
+//		this.hardwareReviews = hardwareReviews;
+//	}
+//
+//	public List<ShopReview> getJuiceReviews() {
+//		return juiceReviews;
+//	}
+//
+//	public void setJuiceReviews(List<ShopReview> juiceReviews) {
+//		this.juiceReviews = juiceReviews;
+//	}
 }

@@ -24,6 +24,7 @@ insert into vaporguide.JuiceFlavor(name) values ('Minty');
 insert into vaporguide.JuiceFlavor(name) values ('Menthol');
 insert into vaporguide.JuiceFlavor(name) values ('Nutty');
 insert into vaporguide.JuiceFlavor(name) values ('Rich');
+insert into vaporguide.JuiceFlavor(name) values ('Sour');
 insert into vaporguide.JuiceFlavor(name) values ('Spiced');
 insert into vaporguide.JuiceFlavor(name) values ('Sweet');
 insert into vaporguide.JuiceFlavor(name) values ('Tobacco');
