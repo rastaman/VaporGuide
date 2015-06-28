@@ -21,14 +21,14 @@ public class User implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "name", unique=true)
-	private String name;
+//	@Column(name = "name", unique=true)
+//	private String name;
 	
-	@Column(name = "facebookId", unique=true)
-	private String facebookId;
+	@Column(name = "facebook_id", unique=true)
+	private String facebook_id;
 	
-	@Column(name = "currentFacebookToken", unique=true)
-	private String currentFacebookToken;
+//	@Column(name = "currentFacebookToken", unique=true)
+//	private String currentFacebookToken;
 	
 	// referencing tables
 	@OneToMany(mappedBy="user_id", fetch=FetchType.LAZY, orphanRemoval=true) 
@@ -48,14 +48,22 @@ public class User implements Serializable {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFacebook_id() {
+		return facebook_id;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFacebook_id(String facebook_id) {
+		this.facebook_id = facebook_id;
 	}
-	
+
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//	
 //	public List<ShopReview> getShopReviews() {
 //		return shopReviews;
 //	}
