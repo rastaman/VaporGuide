@@ -32,6 +32,8 @@ insert into vaporguide.JuiceFlavor(name) values ('Yogurt');
 
 #Users
 insert into vaporguide.User(facebook_id) values ('10153377641965135');
+insert into vaporguide.User(facebook_id) values ('1');
+insert into vaporguide.User(facebook_id) values ('2');
 
 #Brands
 INSERT into vaporguide.brand(name,website) values ('101 Vape','http://101vape.com/');
@@ -14509,6 +14511,8 @@ INSERT into vaporguide.juice(name,brand_id) values ('Zuro''s Cereal', coalesce((
 INSERT into vaporguide.juice(name,brand_id) values ('Zuro''s Milk', coalesce((select id from vaporguide.brand where name = "Zuro's Milk"), 999999));
 
 #Juice Reviews
-insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId) values(null, '1', '1', '8', 'My favorite cereal flavor.', '8', '7', '2', '6', '70', '30', '3', '0', '3', '9', '5'); 
-insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId) values(null, '2', '1', '7', 'Good - but a little too eggy of a custard.', '7', '7', '2', '5', '70', '30', '3', '1', '6', '16', '5');
+insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId, updated_datetime) values(null, '1', '1', '8', 'My favorite cereal flavor.', '8', '7', '2', '6', '70', '30', '3', '0', '3', '9', '5', '2015-07-22 22:17:29'); 
+insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId, updated_datetime) values(null, '2', '1', '7', 'Good - but a little too eggy of a custard.', '7', '7', '2', '5', '70', '30', '3', '1', '6', '16', '5', '2015-07-20 22:17:29');
+insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId, updated_datetime) values(null, '1734', '1', '8', 'My favorite cereal flavor.', '8', '7', '2', '6', '70', '30', '3', '0', '3', '9', '5', '2015-07-22 22:16:29'); 
+insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId, updated_datetime) values(null, '2345', '1', '7', 'Good - but a little too eggy of a custard.', '7', '7', '2', '5', '70', '30', '3', '1', '6', '16', '5', '2015-06-22 22:17:29');
 --insert into vaporguide.JuiceReview(id, juice_id, user_id, rating, review, flavor, vapor, throat, worth, vg, pg, nic, steep, flavorOneId, flavorTwoId, flavorThreeId) values(null, '2', '1', '9', 'Great flavor - wish it was cheaper though.', '9', '7', '2', '7', '70', '30', '3', '3', '5','16', null);

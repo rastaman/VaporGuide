@@ -33,10 +33,9 @@ public class JuiceReviewServiceImpl implements JuiceReviewService {
 		return juiceReviewRepository.findByJuiceId(id);
 	}
 	
-	@Transactional
-	public List<JuiceReview> findByName(String name) {
-		//return juiceReviewRepository.findByName(name);
-		return null;
+	@Override
+	public List<JuiceReview> findByUserId(int id) {
+		return juiceReviewRepository.findByUserId(id);
 	}
 
 	@Transactional(rollbackFor=JuiceReviewNotFoundException.class)
@@ -86,5 +85,4 @@ public class JuiceReviewServiceImpl implements JuiceReviewService {
 		
 		return updatedJuiceReview;
 	}
-	
 }

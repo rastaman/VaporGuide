@@ -57,10 +57,6 @@ public class ShopReview implements Serializable
 	private Integer stockRating;
 	
 	//record keeping
-	@Column(name = "created_datetime")
-	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-	private PersistentLocalDateTime createdDate;
-	
 	@Column(name = "updated_datetime")
 	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private PersistentLocalDateTime updatedDate;
@@ -137,6 +133,14 @@ public class ShopReview implements Serializable
 
 	public void setStockRating(Integer stockRating) {
 		this.stockRating = stockRating;
+	}
+
+	public PersistentLocalDateTime getUpdatedDate() {
+		return updatedDate;
+	}
+
+	public void setUpdatedDate(PersistentLocalDateTime updatedDate) {
+		this.updatedDate = updatedDate;
 	}
 }
 	

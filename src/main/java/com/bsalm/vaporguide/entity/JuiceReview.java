@@ -1,6 +1,7 @@
 package com.bsalm.vaporguide.entity;
 
 
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,6 +13,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+
+import org.hibernate.annotations.Type;
+import org.jadira.usertype.dateandtime.joda.PersistentDateTime;
+import org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime;
+import org.joda.time.DateTime;
 
 @Entity
 @Table(name = "juicereview", 
@@ -98,6 +104,12 @@ public class JuiceReview
 	
 	@Column(nullable=true)
 	private Integer flavorThreeId;
+	
+	//record keeping
+	@Basic(optional=false)
+	@Column(name="updated_datetime", columnDefinition="DATETIME(3) NOT NULL")
+	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentDateTime")
+	private DateTime updatedDate;
 	
 	//getters / setters
 	public Integer getId() {
@@ -242,6 +254,14 @@ public class JuiceReview
 
 	public void setFlavorThreeId(Integer flavorThreeId) {
 		this.flavorThreeId = flavorThreeId;
+	}
+
+	public DateTime getUpdatedDate() {
+		return updatedDate;
+	}
+
+	public void setUpdatedDate(DateTime updatedDate) {
+		this.updatedDate = updatedDate;
 	}
 
 //	public JuiceFlavor getFlavorOne() {

@@ -17,7 +17,7 @@ public interface JuiceReviewService {
 	
 	public List<JuiceReview> findByJuiceId(int id);
 	
-	public List<JuiceReview> findByName(String Name);
+	public List<JuiceReview> findByUserId(int id);
 	
 	//Creates
 	

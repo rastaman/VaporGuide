@@ -37,7 +37,7 @@ public class Juice {
 	private Integer brand_id;
 	
 	// referencing tables
-	@OneToMany(mappedBy="juice", fetch=FetchType.EAGER, orphanRemoval=true) 
+	@OneToMany(mappedBy="juice", fetch=FetchType.LAZY, orphanRemoval=true) 
 	private List<JuiceReview> juiceReviews;
 	
 	//fields
