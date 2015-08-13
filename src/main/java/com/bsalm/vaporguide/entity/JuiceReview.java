@@ -71,17 +71,17 @@ public class JuiceReview
 	private Integer worth;
 	
 	//preferences
-	@Column(name = "vg")
-	private Integer vg;
+	@Column(name = "vg", columnDefinition="DECIMAL(3,1) NOT NULL")
+	private double vg;
 	
-	@Column(name = "pg")
-	private Integer pg;
+	@Column(name = "pg", columnDefinition="DECIMAL(3,1) NOT NULL")
+	private double pg;
 	
-	@Column(name = "nic")
-	private Integer nic;
+	@Column(name = "nic", columnDefinition="DECIMAL(2,1) NOT NULL")
+	private double nic;
 	
-	@Column(name = "steep")
-	private Integer steep;
+	@Column(name = "steep", columnDefinition="DECIMAL(3,1) NOT NULL")
+	private double steep;
 	
 	// flavor characteristics 
 //	@ManyToOne(fetch=FetchType.LAZY)
@@ -200,35 +200,35 @@ public class JuiceReview
 		this.worth = worth;
 	}
 
-	public Integer getVg() {
+	public Double getVg() {
 		return vg;
 	}
 
-	public void setVg(Integer vg) {
+	public void setVg(Double vg) {
 		this.vg = vg;
 	}
 
-	public Integer getPg() {
+	public Double getPg() {
 		return pg;
 	}
 
-	public void setPg(Integer pg) {
+	public void setPg(Double pg) {
 		this.pg = pg;
 	}
 
-	public Integer getNic() {
+	public Double getNic() {
 		return nic;
 	}
 
-	public void setNic(Integer nic) {
+	public void setNic(Double nic) {
 		this.nic = nic;
 	}
 
-	public Integer getSteep() {
+	public Double getSteep() {
 		return steep;
 	}
 
-	public void setSteep(Integer steep) {
+	public void setSteep(Double steep) {
 		this.steep = steep;
 	}
 
@@ -256,14 +256,6 @@ public class JuiceReview
 		this.flavorThreeId = flavorThreeId;
 	}
 
-	public DateTime getUpdatedDate() {
-		return updatedDate;
-	}
-
-	public void setUpdatedDate(DateTime updatedDate) {
-		this.updatedDate = updatedDate;
-	}
-
 //	public JuiceFlavor getFlavorOne() {
 //		return flavorOne;
 //	}
@@ -287,5 +279,13 @@ public class JuiceReview
 //	public void setFlavorThree(JuiceFlavor flavorThree) {
 //		this.flavorThree = flavorThree;
 //	}
+	
+	public DateTime getUpdatedDate() {
+		return updatedDate;
+	}
+
+	public void setUpdatedDate(DateTime updatedDate) {
+		this.updatedDate = updatedDate;
+	}
 
 }

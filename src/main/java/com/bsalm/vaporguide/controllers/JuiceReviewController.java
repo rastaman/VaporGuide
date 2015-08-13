@@ -64,7 +64,16 @@ public class JuiceReviewController {
 		if (result.hasErrors())
 			throw new InvalidRequestException("Error creating juiceReview", result);
 		
-		return juiceReviewService.create(juiceReview);	
+		//call update service
+		JuiceReview createdJuiceReview;
+		try {
+			createdJuiceReview = juiceReviewService.create(juiceReview);
+		} catch (JuiceReviewNotFoundException e) {
+			throw new ResourceNotFoundException("Unable to create juiceReview - "
+					+ "Error retrieving juice for update.");
+		}
+
+		return createdJuiceReview;
 	}
 
 	@RequestMapping(value="/{id}", method=RequestMethod.PUT)

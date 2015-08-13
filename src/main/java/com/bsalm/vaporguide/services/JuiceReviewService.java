@@ -19,9 +19,11 @@ public interface JuiceReviewService {
 	
 	public List<JuiceReview> findByUserId(int id);
 	
+	public List<JuiceReview> findByUserIdAndJuiceId(int userId, int juiceId);
+	
 	//Creates
 	
-	public JuiceReview create(JuiceReview juiceReview);
+	public JuiceReview create(JuiceReview juiceReview) throws JuiceReviewNotFoundException;
 	
 	//Updates
 	
