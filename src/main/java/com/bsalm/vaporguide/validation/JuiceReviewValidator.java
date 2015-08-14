@@ -30,6 +30,11 @@ public class JuiceReviewValidator implements Validator {
 //		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "genre", "field is empty.");
 		
 		//check nulls
+		if (!(input.getUser_id() instanceof Integer))
+			errors.rejectValue("user_id", "invalid type or null");
+		if (!(input.getJuice_id() instanceof Integer))
+			errors.rejectValue("juice_id", "invalid type or null");
+		
 		if (!(input.getRating() instanceof Integer))
 			errors.rejectValue("rating", "invalid type or null");
 		if (!(input.getReview() instanceof String))
@@ -59,6 +64,10 @@ public class JuiceReviewValidator implements Validator {
 			errors.rejectValue("flavorTwoId", "invalid type or null");
 		if (!(input.getFlavorThreeId() instanceof Integer))
 			errors.rejectValue("flavorThreeId", "invalid type or null");
+		
+		if(!(errors.getErrorCount() == 0)){
+			return;
+		}
 		
 		//bounds
 		if (! integerBetween(1, 10, input.getRating()))
@@ -93,12 +102,12 @@ public class JuiceReviewValidator implements Validator {
 			errors.rejectValue("flavorThreeId", "value out of bounds");
 		
 		//passed validations - check db for duplicates
-		if(errors.getErrorCount() == 0){
-			List<JuiceReview> duplicateNames = juiceReviewService.findByUserIdAndJuiceId(input.getUser_id(), input.getJuice_id());
-
-			if(duplicateNames.size() > 0)
-				errors.rejectValue("name", "already exists.");
-		}
+//		if(errors.getErrorCount() == 0){
+//			List<JuiceReview> duplicateNames = juiceReviewService.findByUserIdAndJuiceId(input.getUser_id(), input.getJuice_id());
+//
+//			if(duplicateNames.size() > 0)
+//				errors.rejectValue("name", "already exists."); //TODO change this to some meaningful message
+//		}
 	}
 	
 	private boolean integerBetween(int l, int r, int x)
