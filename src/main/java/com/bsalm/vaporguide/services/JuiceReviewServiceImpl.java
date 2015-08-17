@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.joda.time.DateTime;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -71,6 +72,7 @@ public class JuiceReviewServiceImpl implements JuiceReviewService {
 		
 		JuiceReview createdJuiceReview = juiceReview;
 		createdJuiceReview = trimData(createdJuiceReview);
+		createdJuiceReview.setUpdatedDate(DateTime.now());
 		
 		return juiceReviewRepository.save(createdJuiceReview);
 	}
