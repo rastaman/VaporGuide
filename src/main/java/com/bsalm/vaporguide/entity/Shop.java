@@ -26,13 +26,31 @@ public class Shop implements Serializable {
 	@Column(name = "name", nullable=false)
 	private String name;
 	
+	@Column(name = "website", nullable=true)
+	private String website;
+	
+	@Column(name = "facebookpage", nullable=true)
+	private String facebookPage;
+	
+	@Column(name = "phone", nullable=true)
+	private String phone;
+	
 	@Column(name = "address", nullable=false)
 	private String address;
 	
-	@Column
+	@Column(name = "city", nullable=false)
+	private String city;
+	
+	@Column(name = "state", nullable=false)
+	private String state;
+	
+	@Column(name = "zip", nullable=false)
+	private String zip;
+	
+	@Column(name = "latitude", nullable=false)
 	private double latitude;
 	
-	@Column
+	@Column(name = "longitude", nullable=false)
 	private double longitude;
 	
 	@OneToMany(mappedBy="shop_id", fetch=FetchType.EAGER, orphanRemoval=true) 
@@ -62,12 +80,60 @@ public class Shop implements Serializable {
 		this.name = name;
 	}	
 	
+	public String getWebsite() {
+		return website;
+	}
+
+	public void setWebsite(String website) {
+		this.website = website;
+	}
+
+	public String getFacebookPage() {
+		return facebookPage;
+	}
+
+	public void setFacebookPage(String facebookPage) {
+		this.facebookPage = facebookPage;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
 	public String getAddress() {
 		return address;
 	}
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		this.zip = zip;
 	}
 
 	public double getLatitude() {
@@ -86,12 +152,12 @@ public class Shop implements Serializable {
 		this.longitude = longitude;
 	}
 
-	public List<ShopReview> getShopReviews() {
-		return shopReviews;
-	}
-
-	public void setShopReviews(List<ShopReview> shopReviews) {
-		this.shopReviews = shopReviews;
-	}
+//	public List<ShopReview> getShopReviews() {
+//		return shopReviews;
+//	}
+//
+//	public void setShopReviews(List<ShopReview> shopReviews) {
+//		this.shopReviews = shopReviews;
+//	}
 
 }

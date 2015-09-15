@@ -30,10 +30,10 @@
 
 - hardware reviews 
 
-100 - Gear nut
+100 - Gear Nut
 
 -flavors (three stages?):
-Beverage - 
+Beverage - Soda Jerk
 Candy - 
 Cereal Connoisseur
 Coffee - Bean Queen
@@ -48,14 +48,23 @@ Menthol -
 Nutty - Nuts for Nuts
 Rich - Rollin' in it
 Sour
-Spiced
-Sweet Tooth - 
+Spiced - 
+Sweet Tooth - Cavity Prone
 Tobacco - Old School 
 Yogurt - Yogurt yahoo
 
+-shop reviews
+5 - wanderer
+10 - traveler
+20 - drifter
+35 - 
+50 -
+
 MORE BRANDS
 
-<div class="item" data-value="2168"> South Coast Vapes</div>
+<div class="menu">
+                      <div class="item" data-value=""></div>
+                      <div class="item" data-value="2168"> South Coast Vapes</div>
                       <div class="item" data-value="628">(313) Juice</div>
                       <div class="item" data-value="712">101 Vape</div>
                       <div class="item" data-value="1736">10th Planet E Juice</div>
@@ -81,6 +90,7 @@ MORE BRANDS
                       <div class="item" data-value="1194">5280 Vapor, Inc.</div>
                       <div class="item" data-value="2118">6 Shot Vapor</div>
                       <div class="item" data-value="1103">63 Liquid</div>
+                      <div class="item" data-value="2464">63 Maui</div>
                       <div class="item" data-value="2119">7 Drops</div>
                       <div class="item" data-value="724">7's E-Cigarettes</div>
                       <div class="item" data-value="1593">8-Bit Vapor</div>
@@ -136,7 +146,6 @@ MORE BRANDS
                       <div class="item" data-value="358">Alpha Vape</div>
                       <div class="item" data-value="127">Alt Smoke</div>
                       <div class="item" data-value="1158">AltCig</div>
-                      <div class="item" data-value="797">AlterD VapeZ</div>
                       <div class="item" data-value="430">Alternate Cig</div>
                       <div class="item" data-value="1847">America's Choice Electronic Cigarettes</div>
                       <div class="item" data-value="1613">American Juices</div>
@@ -155,12 +164,13 @@ MORE BRANDS
                       <div class="item" data-value="220">Apocalypse Juice</div>
                       <div class="item" data-value="2084">Apocalyptic E-liquids</div>
                       <div class="item" data-value="88">Apollo E-Cigs</div>
-                      <div class="item" data-value="1662">Apothecary-Vapes</div>
                       <div class="item" data-value="78">Aqua Vapor</div>
                       <div class="item" data-value="2126">Arctic Vapor</div>
                       <div class="item" data-value="1069">Aroma Eliquid</div>
                       <div class="item" data-value="1658">Arrow Head E-Juice</div>
                       <div class="item" data-value="2379">Artifact Vapor Craft</div>
+                      <div class="item" data-value="2474">Artisan Clouds</div>
+                      <div class="item" data-value="2417">Artisan Vaper</div>
                       <div class="item" data-value="285">Artisan Vapor Company</div>
                       <div class="item" data-value="2086">Artisan Vapor Company UK</div>
                       <div class="item" data-value="1542">Ascent Vapor</div>
@@ -235,6 +245,7 @@ MORE BRANDS
                       <div class="item" data-value="639">Big D Vapor</div>
                       <div class="item" data-value="790">Big Red Vapor</div>
                       <div class="item" data-value="287">Big Tex Vapor</div>
+                      <div class="item" data-value="2411">Big Time Vapors, LLC</div>
                       <div class="item" data-value="2138">Big Top Vape</div>
                       <div class="item" data-value="283">Big Willie's Custard</div>
                       <div class="item" data-value="2139">Binary E-Liquid</div>
@@ -244,7 +255,6 @@ MORE BRANDS
                       <div class="item" data-value="1722">Black Axis Juice Co.</div>
                       <div class="item" data-value="888">Black Cat</div>
                       <div class="item" data-value="291">Black Cloud Vapor</div>
-                      <div class="item" data-value="750">Black Crown Vapor</div>
                       <div class="item" data-value="1552">Black Diamond Vapes</div>
                       <div class="item" data-value="874">Black Dragon Vapor</div>
                       <div class="item" data-value="1293">Black Forest Vapes</div>
@@ -262,8 +272,8 @@ MORE BRANDS
                       <div class="item" data-value="523">Blacksheep Vapors</div>
                       <div class="item" data-value="448">BlazeCig</div>
                       <div class="item" data-value="2283">Blazin' Vapors</div>
+                      <div class="item" data-value="2455">Blends By Bryce</div>
                       <div class="item" data-value="1551">BlindFold Juices</div>
-                      <div class="item" data-value="1023">Blitz Vapes</div>
                       <div class="item" data-value="233">Blono Smoke</div>
                       <div class="item" data-value="2210">Blue Collar Vapes</div>
                       <div class="item" data-value="1860">Blue Collar Vapors</div>
@@ -299,6 +309,7 @@ MORE BRANDS
                       <div class="item" data-value="2013">Box Mod Kings</div>
                       <div class="item" data-value="1909">Breazy</div>
                       <div class="item" data-value="261">Brew City Juice</div>
+                      <div class="item" data-value="2408">Brewell Vapory</div>
                       <div class="item" data-value="2076">Broken Bottle Vape Co.</div>
                       <div class="item" data-value="1642">Brood Juice</div>
                       <div class="item" data-value="2143">Brother's Blend</div>
@@ -307,7 +318,6 @@ MORE BRANDS
                       <div class="item" data-value="1190">Bryce's E-Juice</div>
                       <div class="item" data-value="271">Bubba's Vapor & Tobacco Shop</div>
                       <div class="item" data-value="634">Buck Naked </div>
-                      <div class="item" data-value="1254">Buck Naked eJuice</div>
                       <div class="item" data-value="842">BuckShot Vapors</div>
                       <div class="item" data-value="806">Buckeye Vapors</div>
                       <div class="item" data-value="1528">Buku Vapor</div>
@@ -338,6 +348,7 @@ MORE BRANDS
                       <div class="item" data-value="42">Canada E-Juice</div>
                       <div class="item" data-value="1753">Cape Fear Juice Company</div>
                       <div class="item" data-value="1544">Capstone Vapor</div>
+                      <div class="item" data-value="2398">Captain G Vapes</div>
                       <div class="item" data-value="2035">Captain Obvious E-Juice</div>
                       <div class="item" data-value="2216">Captain Obvious Ejuice</div>
                       <div class="item" data-value="1275">Captain Roger's Private Reserve</div>
@@ -356,6 +367,7 @@ MORE BRANDS
                       <div class="item" data-value="262">Celtic Vapours</div>
                       <div class="item" data-value="1854">Centerfold Vape Co.</div>
                       <div class="item" data-value="1036">Central Vapors</div>
+                      <div class="item" data-value="2426">Cereal Mafia E Liquid</div>
                       <div class="item" data-value="1821">Chain Vapers Inc</div>
                       <div class="item" data-value="2148">Chaos Clouds</div>
                       <div class="item" data-value="661">Chapter Twelve Vapors</div>
@@ -379,10 +391,12 @@ MORE BRANDS
                       <div class="item" data-value="239">Cigette Vapor</div>
                       <div class="item" data-value="846">Ciggy Galore</div>
                       <div class="item" data-value="698">Ciggy Shack</div>
+                      <div class="item" data-value="2448">CiggyJuice</div>
                       <div class="item" data-value="1403">Ciggz</div>
                       <div class="item" data-value="2158">Cigtronica Ltd</div>
                       <div class="item" data-value="1916">Cincy Vapors</div>
                       <div class="item" data-value="1768">CinnaVapes</div>
+                      <div class="item" data-value="2427">City Vape Store</div>
                       <div class="item" data-value="1388">Civap</div>
                       <div class="item" data-value="1828">Clancy's Vapor Company</div>
                       <div class="item" data-value="438">Claremore Route 66 Vapors</div>
@@ -390,13 +404,11 @@ MORE BRANDS
                       <div class="item" data-value="1645">Classy Cloud Vapes</div>
                       <div class="item" data-value="2031">Classy Vape Co.</div>
                       <div class="item" data-value="1184">Clearette</div>
-                      <div class="item" data-value="462">Clever Vape</div>
                       <div class="item" data-value="1239">Cloud 8 eJuice</div>
                       <div class="item" data-value="314">Cloud 9</div>
                       <div class="item" data-value="1901">Cloud 9 Hemp</div>
                       <div class="item" data-value="1690">Cloud Alchemist</div>
                       <div class="item" data-value="355">Cloud Atlas Vaping</div>
-                      <div class="item" data-value="2326">Cloud Chaser Vapor</div>
                       <div class="item" data-value="2354">Cloud Chaser Vapor, Inc.</div>
                       <div class="item" data-value="2038">Cloud Chasers Inc</div>
                       <div class="item" data-value="424">Cloud House Vapor</div>
@@ -406,15 +418,16 @@ MORE BRANDS
                       <div class="item" data-value="2151">Cloud Star Vapor</div>
                       <div class="item" data-value="1191">Cloud Vapery</div>
                       <div class="item" data-value="1762">CloudCig</div>
+                      <div class="item" data-value="2440">Cloudcraft eLiquid</div>
                       <div class="item" data-value="1281">Clouds of Hope</div>
                       <div class="item" data-value="868">Clouds of Icarus</div>
                       <div class="item" data-value="352">Clouds of Vapor</div>
                       <div class="item" data-value="1393">Cloudscape Vape</div>
                       <div class="item" data-value="2014">Cloudstix</div>
-                      <div class="item" data-value="1356">Clown Serum</div>
                       <div class="item" data-value="1253">Clutch Vapors</div>
                       <div class="item" data-value="1304">CnA Vapor</div>
                       <div class="item" data-value="498">Coast to Coast Vaping</div>
+                      <div class="item" data-value="2406">Coastal Clouds Vapor</div>
                       <div class="item" data-value="624">Coi E-Cig</div>
                       <div class="item" data-value="1750">Coil Art Tonics</div>
                       <div class="item" data-value="1459">Coil Vapes</div>
@@ -426,10 +439,14 @@ MORE BRANDS
                       <div class="item" data-value="290">Composed Chaos</div>
                       <div class="item" data-value="1935">Connoisseur Ejuice</div>
                       <div class="item" data-value="812">Cool Breeze Vapor</div>
+                      <div class="item" data-value="2432">Cool Vape</div>
+                      <div class="item" data-value="2449">Cool Vape</div>
                       <div class="item" data-value="23">Copper Creek</div>
                       <div class="item" data-value="2365">Cornish Liquids</div>
+                      <div class="item" data-value="2441">Corona Brothers</div>
                       <div class="item" data-value="552">Cosmic Fog</div>
                       <div class="item" data-value="440">Coval Vapes</div>
+                      <div class="item" data-value="2471">Craft Vapery</div>
                       <div class="item" data-value="1265">Craft Vapes</div>
                       <div class="item" data-value="205">Crave Essence</div>
                       <div class="item" data-value="723">Cravin Vapes</div>
@@ -464,11 +481,12 @@ MORE BRANDS
                       <div class="item" data-value="96">DFW Vapor</div>
                       <div class="item" data-value="1578">DIY Vapor Supply</div>
                       <div class="item" data-value="2097">DNA Vapor</div>
-                      <div class="item" data-value="2387">DNU</div>
                       <div class="item" data-value="1843">Daft Vapes</div>
+                      <div class="item" data-value="2463">Dai San Gen</div>
                       <div class="item" data-value="597">Dailyvape</div>
                       <div class="item" data-value="1595">Dakine Vapes HI</div>
                       <div class="item" data-value="122">Dark City Vapor</div>
+                      <div class="item" data-value="2470">Dark Matter Vapor</div>
                       <div class="item" data-value="11">Darkest Day Vapors</div>
                       <div class="item" data-value="1586">Darkstar Vapour</div>
                       <div class="item" data-value="131">Darth Vapers</div>
@@ -489,20 +507,24 @@ MORE BRANDS
                       <div class="item" data-value="455">Derp Sauce</div>
                       <div class="item" data-value="132">Desert Vapes</div>
                       <div class="item" data-value="1499">Detroit Juice Co</div>
+                      <div class="item" data-value="2393">Detroit Rock Candy</div>
                       <div class="item" data-value="1120">Deus Juice</div>
                       <div class="item" data-value="767">Diamond Flavours</div>
                       <div class="item" data-value="185">Diamond Vapor</div>
                       <div class="item" data-value="2155">Diesel By CG</div>
                       <div class="item" data-value="2239">Dig Vapors</div>
                       <div class="item" data-value="649">Digbys Juices</div>
+                      <div class="item" data-value="2407">Digital Cloud Vapor</div>
                       <div class="item" data-value="345">Digital Smoke Vapour Shop</div>
                       <div class="item" data-value="310">Digital Vapor Den</div>
                       <div class="item" data-value="1726">Dirty Bird Juice</div>
                       <div class="item" data-value="1178">Disco Vapor</div>
+                      <div class="item" data-value="2391">District F5ve</div>
                       <div class="item" data-value="1182">Diversity</div>
                       <div class="item" data-value="515">Division Vapor</div>
                       <div class="item" data-value="2062">Dixie's Vapor Shop</div>
                       <div class="item" data-value="841">Doc Bailey's Elixir</div>
+                      <div class="item" data-value="2421">Dockside Vapors</div>
                       <div class="item" data-value="1497">Doctor Big Vapes</div>
                       <div class="item" data-value="1135">Doge Juice</div>
                       <div class="item" data-value="722">Dolce Vapes</div>
@@ -525,6 +547,7 @@ MORE BRANDS
                       <div class="item" data-value="1651">Drip Bottles</div>
                       <div class="item" data-value="2066">Drip Drop Vapour</div>
                       <div class="item" data-value="1490">Drip Society</div>
+                      <div class="item" data-value="2405">DripStar Vapor</div>
                       <div class="item" data-value="1329">Dripbeats</div>
                       <div class="item" data-value="1335">Dripclouds</div>
                       <div class="item" data-value="1218">Dripped Life</div>
@@ -560,6 +583,7 @@ MORE BRANDS
                       <div class="item" data-value="1945">Eagle Vapors</div>
                       <div class="item" data-value="2166">Earl of Vape</div>
                       <div class="item" data-value="1384">Earth's Bounty E-Juice</div>
+                      <div class="item" data-value="2416">Easy CIgarettes</div>
                       <div class="item" data-value="736">Easy Vape Club</div>
                       <div class="item" data-value="77">Easy Vaping</div>
                       <div class="item" data-value="670">Ecig Avenue</div>
@@ -568,6 +592,7 @@ MORE BRANDS
                       <div class="item" data-value="2186">Ecig One</div>
                       <div class="item" data-value="1119">Ecig Town</div>
                       <div class="item" data-value="1698">Ecig Wizard</div>
+                      <div class="item" data-value="2394">EcigN8</div>
                       <div class="item" data-value="1999">EcigOnly</div>
                       <div class="item" data-value="754">Eciggity</div>
                       <div class="item" data-value="1203">Eciggy UK</div>
@@ -592,6 +617,7 @@ MORE BRANDS
                       <div class="item" data-value="1358">Electronic Cigarette World</div>
                       <div class="item" data-value="2024">Elegant Vapour</div>
                       <div class="item" data-value="2061">Element E-Liquid</div>
+                      <div class="item" data-value="2468">Element Vape</div>
                       <div class="item" data-value="31">Elevated Vaping</div>
                       <div class="item" data-value="1287">Eliquid Lab</div>
                       <div class="item" data-value="1096">Eliquid Market</div>
@@ -632,14 +658,12 @@ MORE BRANDS
                       <div class="item" data-value="63">Exhale Vapors</div>
                       <div class="item" data-value="1568">Exodus Vapor</div>
                       <div class="item" data-value="1115">F-Liquids</div>
-                      <div class="item" data-value="465">FN Vapes</div>
                       <div class="item" data-value="2386">FOO fluids</div>
                       <div class="item" data-value="1112">FOOS</div>
                       <div class="item" data-value="2019">FSECig</div>
                       <div class="item" data-value="446">Fa-Q (Formerly: dripTonic)</div>
                       <div class="item" data-value="391">Faded Vapes</div>
                       <div class="item" data-value="881">Famous Smoke Shop</div>
-                      <div class="item" data-value="44">Fancee Juice</div>
                       <div class="item" data-value="788">Far West Vapor</div>
                       <div class="item" data-value="615">FastTech</div>
                       <div class="item" data-value="1715">Feghali Vapor</div>
@@ -666,14 +690,17 @@ MORE BRANDS
                       <div class="item" data-value="953">FlavourArt</div>
                       <div class="item" data-value="2249">Flavourlab</div>
                       <div class="item" data-value="713">Flavourtec</div>
+                      <div class="item" data-value="2442">Flawless Vape Shop</div>
                       <div class="item" data-value="2234">Fluffy Boy vapor</div>
                       <div class="item" data-value="1264">Fluffy Clouds</div>
                       <div class="item" data-value="2156">Fog Dog Vapors</div>
                       <div class="item" data-value="971">Fog Fuel</div>
+                      <div class="item" data-value="2450">Fog On The Tyne</div>
                       <div class="item" data-value="1297">FogBoss</div>
                       <div class="item" data-value="2390">Fogging Vapes</div>
                       <div class="item" data-value="895">Foggy Nights</div>
                       <div class="item" data-value="1319">Fogs Brew</div>
+                      <div class="item" data-value="2433">For Vaping</div>
                       <div class="item" data-value="1038">Forever 27 Vape</div>
                       <div class="item" data-value="2018">FourStripe</div>
                       <div class="item" data-value="956">Freakshow Curious Elixirs</div>
@@ -687,6 +714,7 @@ MORE BRANDS
                       <div class="item" data-value="568">Frozen Vapors</div>
                       <div class="item" data-value="2294">Fu Man Brews</div>
                       <div class="item" data-value="2274">Full Steam Vapor</div>
+                      <div class="item" data-value="2419">Funksauce 2</div>
                       <div class="item" data-value="68">Funky Vapes</div>
                       <div class="item" data-value="33">Fuzion Vapor</div>
                       <div class="item" data-value="292">G2 Vapor</div>
@@ -696,10 +724,12 @@ MORE BRANDS
                       <div class="item" data-value="1146">GR Vapor</div>
                       <div class="item" data-value="1517">GS3</div>
                       <div class="item" data-value="1576">Galactic Vapes</div>
+                      <div class="item" data-value="2429">Galactic Vapors</div>
                       <div class="item" data-value="2297">Game Over Vapor</div>
                       <div class="item" data-value="2270">Game of Vapes</div>
                       <div class="item" data-value="1907">Gamucci</div>
                       <div class="item" data-value="1984">Gaslight Vapor Supply</div>
+                      <div class="item" data-value="2414">Gate City Vapors</div>
                       <div class="item" data-value="1691">Gateway Vapes</div>
                       <div class="item" data-value="862">Geek Vapor</div>
                       <div class="item" data-value="755">Gemini Vapors</div>
@@ -720,6 +750,7 @@ MORE BRANDS
                       <div class="item" data-value="135">Glory Vapes</div>
                       <div class="item" data-value="186">Go To Vapor</div>
                       <div class="item" data-value="1134">Go Vape</div>
+                      <div class="item" data-value="2434">Go! Electronic Cigarette</div>
                       <div class="item" data-value="2007">Go-Liquid</div>
                       <div class="item" data-value="1598">Gold Seal</div>
                       <div class="item" data-value="459">Golden Drops E-Juice</div>
@@ -732,7 +763,7 @@ MORE BRANDS
                       <div class="item" data-value="168">Good e-Juice</div>
                       <div class="item" data-value="1822">Goodfellas Vapors</div>
                       <div class="item" data-value="1187">Gordona Vapes</div>
-                      <div class="item" data-value="1742">Gorilla Vape</div>
+                      <div class="item" data-value="1742">Gorilla Sauce Juice Co.</div>
                       <div class="item" data-value="90">Got Vapes?</div>
                       <div class="item" data-value="1376">Gothic Vapor</div>
                       <div class="item" data-value="2065">Gourmet Vapes</div>
@@ -792,6 +823,7 @@ MORE BRANDS
                       <div class="item" data-value="571">Henley Premium Vapor</div>
                       <div class="item" data-value="1619">Herbal Liquid</div>
                       <div class="item" data-value="2253">Herbal Vapors LLC</div>
+                      <div class="item" data-value="2402">Hermetic Steam</div>
                       <div class="item" data-value="1175">HiLIQ</div>
                       <div class="item" data-value="1051">High Altitude E-Liquid</div>
                       <div class="item" data-value="197">High Caliber E-Liquid</div>
@@ -812,6 +844,7 @@ MORE BRANDS
                       <div class="item" data-value="1982">Homeboys Select</div>
                       <div class="item" data-value="1285">Honest Abe Juice</div>
                       <div class="item" data-value="648">Honey Hive Vapor</div>
+                      <div class="item" data-value="2435">Hookah on Mars</div>
                       <div class="item" data-value="2063">Hookah-Shisha.com</div>
                       <div class="item" data-value="390">Hooligan Vapes</div>
                       <div class="item" data-value="392">Hoosier Ecig Supply</div>
@@ -828,6 +861,7 @@ MORE BRANDS
                       <div class="item" data-value="1443">IE VAPES</div>
                       <div class="item" data-value="1442">IE Vapor</div>
                       <div class="item" data-value="1107">ITCVapes</div>
+                      <div class="item" data-value="2428">Idaho Vape</div>
                       <div class="item" data-value="403">Ideal Vapor</div>
                       <div class="item" data-value="554">Ideal eCigs</div>
                       <div class="item" data-value="157">Iken Vape</div>
@@ -839,6 +873,7 @@ MORE BRANDS
                       <div class="item" data-value="1719">Independent Vapor Company</div>
                       <div class="item" data-value="15">Indigo Vapor</div>
                       <div class="item" data-value="1955">Infamous</div>
+                      <div class="item" data-value="2473">Infamous Vapes</div>
                       <div class="item" data-value="300">Infinity Vapers</div>
                       <div class="item" data-value="436">Innevape</div>
                       <div class="item" data-value="2175">Innovapours</div>
@@ -854,9 +889,11 @@ MORE BRANDS
                       <div class="item" data-value="1458">J&A Vapes Inc</div>
                       <div class="item" data-value="1181">J&W Vapory</div>
                       <div class="item" data-value="2056">JAC Vapour</div>
+                      <div class="item" data-value="338">JC Classic</div>
                       <div class="item" data-value="407">JD Vapor Co.</div>
                       <div class="item" data-value="2388">JJuice</div>
                       <div class="item" data-value="378">Jackson Vapor Co. (formerly Jameson's Irish Vapor Juice)</div>
+                      <div class="item" data-value="2436">Jake's Vapes</div>
                       <div class="item" data-value="676">Jason's Juice Joint</div>
                       <div class="item" data-value="1983">Jax Vanilla Custard Vapes</div>
                       <div class="item" data-value="1687">JaxxJuice</div>
@@ -870,6 +907,7 @@ MORE BRANDS
                       <div class="item" data-value="2327">Joe Blows Incredible Juice</div>
                       <div class="item" data-value="140">Johnson Creek</div>
                       <div class="item" data-value="2273">Joker Vapors</div>
+                      <div class="item" data-value="2477">Jolley Juice LLC</div>
                       <div class="item" data-value="1689">Joost Vapor</div>
                       <div class="item" data-value="886">Joytech</div>
                       <div class="item" data-value="833">Ju-Ju Vapor</div>
@@ -887,7 +925,6 @@ MORE BRANDS
                       <div class="item" data-value="452">JuiceManUSA</div>
                       <div class="item" data-value="2045">JuiceShop.co.uk</div>
                       <div class="item" data-value="561">Juicifer</div>
-                      <div class="item" data-value="338">Juicy Clear</div>
                       <div class="item" data-value="1669">Juicy Ohms</div>
                       <div class="item" data-value="602">Juicy V's</div>
                       <div class="item" data-value="1671">Juicy eJuice</div>
@@ -904,6 +941,7 @@ MORE BRANDS
                       <div class="item" data-value="1015">Kahuna Vapor</div>
                       <div class="item" data-value="1673">Kahuna eJuice</div>
                       <div class="item" data-value="1210">Kaizenic Labs</div>
+                      <div class="item" data-value="44">Kaizenic Labs</div>
                       <div class="item" data-value="159">Kalamazoo Vapor Shop</div>
                       <div class="item" data-value="1899">Kalari Vapor Liquid</div>
                       <div class="item" data-value="973">Kali Kloud</div>
@@ -933,7 +971,6 @@ MORE BRANDS
                       <div class="item" data-value="1987">Kraken E-Liquid</div>
                       <div class="item" data-value="1125">Kraken Vapor</div>
                       <div class="item" data-value="1728">Krazie Vapes</div>
-                      <div class="item" data-value="801">L.A. Vapor USA</div>
                       <div class="item" data-value="937">LJ's E-Smokes</div>
                       <div class="item" data-value="1739">La Dragonera Vapor Shop</div>
                       <div class="item" data-value="505">La Vape Shop</div>
@@ -993,6 +1030,7 @@ MORE BRANDS
                       <div class="item" data-value="863">Lucky Ruckus Vape Shop</div>
                       <div class="item" data-value="281">Lucky's Vapor Store</div>
                       <div class="item" data-value="2375">Lumberjacks Moonshine</div>
+                      <div class="item" data-value="2451">Lunar-Vape</div>
                       <div class="item" data-value="1575">Lush Vapor</div>
                       <div class="item" data-value="558">Luxe Liquid Vapor</div>
                       <div class="item" data-value="1864">Luxe Vapor</div>
@@ -1023,10 +1061,8 @@ MORE BRANDS
                       <div class="item" data-value="1350">Marietta Vape Bar</div>
                       <div class="item" data-value="2335">Maroon Vape</div>
                       <div class="item" data-value="1536">Master Mix eLiquid</div>
-                      <div class="item" data-value="521">MasterVape</div>
                       <div class="item" data-value="226">Mastermind Elixir</div>
                       <div class="item" data-value="1424">Masterpiece Vapour</div>
-                      <div class="item" data-value="1507">Maulones Premium Vapor Spirits</div>
                       <div class="item" data-value="776">Max Vapor</div>
                       <div class="item" data-value="275">Maxx Tobacco</div>
                       <div class="item" data-value="579">Maya Electric Smoke</div>
@@ -1062,7 +1098,6 @@ MORE BRANDS
                       <div class="item" data-value="770">Mo Vapor</div>
                       <div class="item" data-value="2232">Mod Fuel</div>
                       <div class="item" data-value="1145">Mode Vape</div>
-                      <div class="item" data-value="623">Moe's Potions</div>
                       <div class="item" data-value="1460">Mojo Vapor</div>
                       <div class="item" data-value="2047">Molin Shop</div>
                       <div class="item" data-value="2179">MolinShop</div>
@@ -1072,6 +1107,7 @@ MORE BRANDS
                       <div class="item" data-value="2207">Monsta Sauce </div>
                       <div class="item" data-value="1590">Monster Vape</div>
                       <div class="item" data-value="61">Moon Mountain</div>
+                      <div class="item" data-value="2400">Moose Juice</div>
                       <div class="item" data-value="1603">Moose Knuckle</div>
                       <div class="item" data-value="1545">Moshi</div>
                       <div class="item" data-value="2244">Motley Brew</div>
@@ -1146,15 +1182,19 @@ MORE BRANDS
                       <div class="item" data-value="82">Nixteria (Juicy Vapor)</div>
                       <div class="item" data-value="40">No Ifs Ands or Butts</div>
                       <div class="item" data-value="1670">No. 1 EJuice</div>
+                      <div class="item" data-value="2478">NoSmoke</div>
                       <div class="item" data-value="2181">Nocturnal juice co</div>
                       <div class="item" data-value="1380">Nocturne Vapors</div>
                       <div class="item" data-value="1790">Nom de Plume Vapors</div>
+                      <div class="item" data-value="2462">Nomad Nectar LLC</div>
                       <div class="item" data-value="2324">Nor Star Vape</div>
                       <div class="item" data-value="800">North East Vapor Supplies</div>
                       <div class="item" data-value="867">North Texas Vapor Shop</div>
                       <div class="item" data-value="386">North West Vapors</div>
+                      <div class="item" data-value="2459">NorthWest Juice Co.</div>
                       <div class="item" data-value="1288">Northern Lights Vapor Company</div>
                       <div class="item" data-value="1039">Northern Vapes</div>
+                      <div class="item" data-value="2476">Northstar Liquid</div>
                       <div class="item" data-value="2109">Northwich Vapour Ltd</div>
                       <div class="item" data-value="214">Nosty E-Juice</div>
                       <div class="item" data-value="1100">Not Too Shabby</div>
@@ -1212,6 +1252,7 @@ MORE BRANDS
                       <div class="item" data-value="691">Paramount Vapor</div>
                       <div class="item" data-value="1197">Parkes Vaping</div>
                       <div class="item" data-value="1159">Parrot Vapors</div>
+                      <div class="item" data-value="2396">Patriot Vapor</div>
                       <div class="item" data-value="1415">Peachtree Vapor</div>
                       <div class="item" data-value="2261">Peak Vapor</div>
                       <div class="item" data-value="503">People's Vape</div>
@@ -1245,7 +1286,9 @@ MORE BRANDS
                       <div class="item" data-value="1922">Potion Seller</div>
                       <div class="item" data-value="331">Potion Vape</div>
                       <div class="item" data-value="996">Potions of Kuhanzzi</div>
+                      <div class="item" data-value="2446">Predator</div>
                       <div class="item" data-value="1016">Preferred Vapor</div>
+                      <div class="item" data-value="2401">Premier Vapor and Lounge</div>
                       <div class="item" data-value="1453">Premier Vaporizer</div>
                       <div class="item" data-value="2052">Premium E-Juice UK</div>
                       <div class="item" data-value="2325">Premium Labs</div>
@@ -1326,11 +1369,13 @@ MORE BRANDS
                       <div class="item" data-value="359">Rocket Fuel Vapes</div>
                       <div class="item" data-value="1001">Rocket Sheep Juice Co.</div>
                       <div class="item" data-value="548">Rocky Top Vapor</div>
+                      <div class="item" data-value="801">Rocky's Natural E-Liquid</div>
                       <div class="item" data-value="1770">Rogues Gallery Vapor</div>
                       <div class="item" data-value="821">RokkStarr VaporZz</div>
                       <div class="item" data-value="2218">Rolling Papers Express</div>
                       <div class="item" data-value="1928">Roosevelt Vape</div>
                       <div class="item" data-value="496">Roots Smoke & Vapor Shop</div>
+                      <div class="item" data-value="2460">Roots Smoke & Vapor Shop</div>
                       <div class="item" data-value="1427">Royal Crest Vapors</div>
                       <div class="item" data-value="371">Royal Vapes</div>
                       <div class="item" data-value="652">Royal Vapor  (US)</div>
@@ -1344,6 +1389,7 @@ MORE BRANDS
                       <div class="item" data-value="141">Ruthless e-Juice</div>
                       <div class="item" data-value="587">S & P Custom Vapors</div>
                       <div class="item" data-value="169">S & S Mods</div>
+                      <div class="item" data-value="2423">S & S Mods</div>
                       <div class="item" data-value="2112">SAUZ Juice Co.</div>
                       <div class="item" data-value="1496">SMAX</div>
                       <div class="item" data-value="2342">SMOGjuice</div>
@@ -1353,6 +1399,7 @@ MORE BRANDS
                       <div class="item" data-value="1339">SZVapor</div>
                       <div class="item" data-value="1927">Sababa Vapes</div>
                       <div class="item" data-value="2284">Safari Juice</div>
+                      <div class="item" data-value="2422">Safari Juice 2</div>
                       <div class="item" data-value="2329">SafeLiq</div>
                       <div class="item" data-value="321">Safer Vapors</div>
                       <div class="item" data-value="2199">Sail Away Vapor</div>
@@ -1364,6 +1411,8 @@ MORE BRANDS
                       <div class="item" data-value="222">Salt Lake Vapors</div>
                       <div class="item" data-value="1462">Salty Dog Vapor</div>
                       <div class="item" data-value="2209">Sarcastic Fringehead</div>
+                      <div class="item" data-value="2466">Savage Eliquid</div>
+                      <div class="item" data-value="2437">Savannah Ecig</div>
                       <div class="item" data-value="1697">Savoura Vape</div>
                       <div class="item" data-value="1529">Scope Juice</div>
                       <div class="item" data-value="2165">Scope's Eliquid</div>
@@ -1376,16 +1425,21 @@ MORE BRANDS
                       <div class="item" data-value="467">Seven Bridges Vapors</div>
                       <div class="item" data-value="1482">Shake N Vape</div>
                       <div class="item" data-value="1412">Shijin Vapor</div>
+                      <div class="item" data-value="2425">Shire Juice Co</div>
                       <div class="item" data-value="2103">ShishaGear</div>
                       <div class="item" data-value="1931">Shmookah Juice</div>
                       <div class="item" data-value="1479">Shocker E-Liquid</div>
+                      <div class="item" data-value="521">Shop MasterVape</div>
                       <div class="item" data-value="2102">Shop2Stop</div>
                       <div class="item" data-value="171">ShopMVG</div>
                       <div class="item" data-value="383">Shoreline Vapes</div>
                       <div class="item" data-value="1480">Sicboy Industries</div>
                       <div class="item" data-value="1205">Sick Clouds</div>
+                      <div class="item" data-value="2438">Sick Vapes</div>
                       <div class="item" data-value="923">Signature Vape Juice</div>
+                      <div class="item" data-value="2443">SilkVapes</div>
                       <div class="item" data-value="1396">Silver Star Vapors - Maryland</div>
+                      <div class="item" data-value="2444">SilverDragon Vape Shop</div>
                       <div class="item" data-value="346">Simatech</div>
                       <div class="item" data-value="622">Simply Vapour</div>
                       <div class="item" data-value="2006">Simply eLiquid</div>
@@ -1400,6 +1454,7 @@ MORE BRANDS
                       <div class="item" data-value="958">Skyline Vapor</div>
                       <div class="item" data-value="926">Slang eJuice</div>
                       <div class="item" data-value="1035">Slash Vapr</div>
+                      <div class="item" data-value="2479">Sleeping Dragon Vapor</div>
                       <div class="item" data-value="939">Slim's E-Juice</div>
                       <div class="item" data-value="1604">Slippy Syrup</div>
                       <div class="item" data-value="1371">Sloth Sauce</div>
@@ -1464,6 +1519,7 @@ MORE BRANDS
                       <div class="item" data-value="2360">Steam Spirit Vapor</div>
                       <div class="item" data-value="534">Steamy Vapor</div>
                       <div class="item" data-value="913">Steep Vapors</div>
+                      <div class="item" data-value="2430">Steeped Monkey Brains</div>
                       <div class="item" data-value="960">Stella Blues Vapors</div>
                       <div class="item" data-value="341">Stinky Canuck</div>
                       <div class="item" data-value="1045">Stogies Vapor</div>
@@ -1479,11 +1535,13 @@ MORE BRANDS
                       <div class="item" data-value="1422">Studio City Vapor</div>
                       <div class="item" data-value="1967">Styleuno Liquid</div>
                       <div class="item" data-value="2205">Suck My Juice</div>
+                      <div class="item" data-value="2469">Sugar Momma</div>
                       <div class="item" data-value="1360">Sugarloaf Vapor</div>
                       <div class="item" data-value="393">Suicide Bunny</div>
                       <div class="item" data-value="299">Sun Vapers</div>
                       <div class="item" data-value="1887">Sunshine Vape</div>
                       <div class="item" data-value="768">Suprem-e</div>
+                      <div class="item" data-value="2445">Sure Vapes</div>
                       <div class="item" data-value="2267">Swagger Vapor</div>
                       <div class="item" data-value="540">Sweet Southern Vapes</div>
                       <div class="item" data-value="80">Sweet-Vapes</div>
@@ -1529,6 +1587,7 @@ MORE BRANDS
                       <div class="item" data-value="81">The Electronic Cigarette Company</div>
                       <div class="item" data-value="277">The Fix Vapor Cafe</div>
                       <div class="item" data-value="1566">The Flavour Factory</div>
+                      <div class="item" data-value="2410">The Fog Mafia</div>
                       <div class="item" data-value="1535">The Ghost Modder</div>
                       <div class="item" data-value="2246">The Great J's</div>
                       <div class="item" data-value="2233">The Grind E-Juice</div>
@@ -1552,6 +1611,7 @@ MORE BRANDS
                       <div class="item" data-value="20">The Standard Vape</div>
                       <div class="item" data-value="471">The Steam Co.</div>
                       <div class="item" data-value="907">The Steam Factory</div>
+                      <div class="item" data-value="2404">The Thrifty Vaper</div>
                       <div class="item" data-value="792">The Vape Bar </div>
                       <div class="item" data-value="510">The Vape Bros</div>
                       <div class="item" data-value="969">The Vape Corner</div>
@@ -1591,7 +1651,6 @@ MORE BRANDS
                       <div class="item" data-value="2202">The Vaporium EU</div>
                       <div class="item" data-value="227">The Vaporsphere</div>
                       <div class="item" data-value="306">The Vapour Lounge</div>
-                      <div class="item" data-value="1863">The Vendetta Project</div>
                       <div class="item" data-value="160">The Veteran Vaper</div>
                       <div class="item" data-value="883">The Vial</div>
                       <div class="item" data-value="1930">The Yorkshire Vapor</div>
@@ -1607,9 +1666,11 @@ MORE BRANDS
                       <div class="item" data-value="394">Timeless Vapor</div>
                       <div class="item" data-value="1238">Tin Cigar E-Liquid</div>
                       <div class="item" data-value="1534">Tip Top Vapor</div>
+                      <div class="item" data-value="2467">Titan Vapez</div>
                       <div class="item" data-value="1900">TitleTown E-Liquid</div>
                       <div class="item" data-value="1173">To Be Vaping</div>
                       <div class="item" data-value="1802">Toke Juice</div>
+                      <div class="item" data-value="2439">Top Grade Vapors</div>
                       <div class="item" data-value="699">Toro Loco Vapor</div>
                       <div class="item" data-value="2296">Toronto Juice Co.</div>
                       <div class="item" data-value="2293">Totally Killer Clouds</div>
@@ -1636,6 +1697,7 @@ MORE BRANDS
                       <div class="item" data-value="473">Twisted Electronic Cigarettes</div>
                       <div class="item" data-value="1840">Twizted Vape Juice</div>
                       <div class="item" data-value="7">Two Peas In a Pod</div>
+                      <div class="item" data-value="2413">UIS Vapes</div>
                       <div class="item" data-value="543">UK E LIquids</div>
                       <div class="item" data-value="1202">UK Ecig Store</div>
                       <div class="item" data-value="404">Uber Vapes</div>
@@ -1648,6 +1710,7 @@ MORE BRANDS
                       <div class="item" data-value="1597">Unicorn Vapors</div>
                       <div class="item" data-value="327">Unique Cigs</div>
                       <div class="item" data-value="435">United Vapors</div>
+                      <div class="item" data-value="797">Unkle Alt's Elixirs (Formerly: AlterD VapeZ)</div>
                       <div class="item" data-value="528">Unlimited eCigs</div>
                       <div class="item" data-value="1513">Up N Vape</div>
                       <div class="item" data-value="847">V-Apes</div>
@@ -1664,12 +1727,14 @@ MORE BRANDS
                       <div class="item" data-value="912">Valkyrie Vapor</div>
                       <div class="item" data-value="1614">Valligo</div>
                       <div class="item" data-value="495">Valor Vapor</div>
+                      <div class="item" data-value="2431">Value Vapor</div>
                       <div class="item" data-value="325">Vampire Vapes</div>
                       <div class="item" data-value="1494">Van Dyke Vapes</div>
                       <div class="item" data-value="2306">VanGo Vapes</div>
                       <div class="item" data-value="1910">Vandalia Mist</div>
                       <div class="item" data-value="1688">Vantucky Vape</div>
                       <div class="item" data-value="2370">Vapable Ltd</div>
+                      <div class="item" data-value="2453">Vape & Juice</div>
                       <div class="item" data-value="2214">Vape & Supply</div>
                       <div class="item" data-value="1818">Vape 7 Daze</div>
                       <div class="item" data-value="413">Vape Addict Juices</div>
@@ -1703,7 +1768,10 @@ MORE BRANDS
                       <div class="item" data-value="2190">Vape Inc</div>
                       <div class="item" data-value="1440">Vape Industry</div>
                       <div class="item" data-value="1875">Vape It Now</div>
+                      <div class="item" data-value="2412">Vape Jugs</div>
+                      <div class="item" data-value="2418">Vape L1fe</div>
                       <div class="item" data-value="2032">Vape London</div>
+                      <div class="item" data-value="2397">Vape Lord USA</div>
                       <div class="item" data-value="762">Vape Machine</div>
                       <div class="item" data-value="158">Vape Master</div>
                       <div class="item" data-value="763">Vape Mate</div>
@@ -1733,7 +1801,6 @@ MORE BRANDS
                       <div class="item" data-value="1437">Vape-Out</div>
                       <div class="item" data-value="2090">Vape-Space</div>
                       <div class="item" data-value="2067">Vape.A.Box</div>
-                      <div class="item" data-value="820">Vape33</div>
                       <div class="item" data-value="1048">Vape95</div>
                       <div class="item" data-value="1710">VapeBox</div>
                       <div class="item" data-value="246">VapeCity Chicago</div>
@@ -1743,17 +1810,19 @@ MORE BRANDS
                       <div class="item" data-value="878">VapeIt</div>
                       <div class="item" data-value="627">VapeLuxury</div>
                       <div class="item" data-value="1324">VapeMe Vapables </div>
+                      <div class="item" data-value="2457">VapeMe Vapeables</div>
                       <div class="item" data-value="1316">VapeMeister</div>
                       <div class="item" data-value="103">VapeNY</div>
                       <div class="item" data-value="1292">VapeOholic</div>
                       <div class="item" data-value="1808">VapePGH</div>
                       <div class="item" data-value="1405">VapePanda</div>
-                      <div class="item" data-value="832">VapeRageous</div>
                       <div class="item" data-value="1156">VapeTalo</div>
                       <div class="item" data-value="2286">VapeTek</div>
                       <div class="item" data-value="1354">VapeWorld</div>
+                      <div class="item" data-value="2456">VapeXcape</div>
                       <div class="item" data-value="1942">VapeXport</div>
                       <div class="item" data-value="1375">Vapealicious Juice</div>
+                      <div class="item" data-value="2452">Vapeboy</div>
                       <div class="item" data-value="1985">Vapebrothers</div>
                       <div class="item" data-value="1410">Vapecentric</div>
                       <div class="item" data-value="1444">Vapecr3w</div>
@@ -1767,7 +1836,9 @@ MORE BRANDS
                       <div class="item" data-value="1795">Vaper Mafia</div>
                       <div class="item" data-value="106">Vaper Venue</div>
                       <div class="item" data-value="1029">Vaper Villa</div>
+                      <div class="item" data-value="2420">Vaper's Hobby Shop</div>
                       <div class="item" data-value="2110">VaperCaper </div>
+                      <div class="item" data-value="832">VaperSerum</div>
                       <div class="item" data-value="2002">Vaperama</div>
                       <div class="item" data-value="1992">Vaperfog</div>
                       <div class="item" data-value="1228">Vapergate</div>
@@ -1779,6 +1850,7 @@ MORE BRANDS
                       <div class="item" data-value="251">Vaperz (US)</div>
                       <div class="item" data-value="557">Vapes Galore</div>
                       <div class="item" data-value="1152">Vapes Gone Wild</div>
+                      <div class="item" data-value="2424">Vapes and More</div>
                       <div class="item" data-value="492">Vapes-R-Us</div>
                       <div class="item" data-value="2089">Vapesandjuices.com</div>
                       <div class="item" data-value="1838">Vapestick</div>
@@ -1835,6 +1907,7 @@ MORE BRANDS
                       <div class="item" data-value="1302">Vapor Image LLC</div>
                       <div class="item" data-value="1623">Vapor Invasion</div>
                       <div class="item" data-value="95">Vapor Jedi</div>
+                      <div class="item" data-value="2395">Vapor Jerry's</div>
                       <div class="item" data-value="928">Vapor Kick</div>
                       <div class="item" data-value="187">Vapor King</div>
                       <div class="item" data-value="1003">Vapor Kings</div>
@@ -1847,8 +1920,10 @@ MORE BRANDS
                       <div class="item" data-value="351">Vapor Lounge (WA)</div>
                       <div class="item" data-value="317">Vapor Mania</div>
                       <div class="item" data-value="506">Vapor North</div>
+                      <div class="item" data-value="2447">Vapor Palace</div>
                       <div class="item" data-value="1212">Vapor Puffs</div>
                       <div class="item" data-value="653">Vapor Pusher</div>
+                      <div class="item" data-value="2454">Vapor Quip</div>
                       <div class="item" data-value="342">Vapor Renu</div>
                       <div class="item" data-value="389">Vapor Shark</div>
                       <div class="item" data-value="377">Vapor Source</div>
@@ -1906,6 +1981,7 @@ MORE BRANDS
                       <div class="item" data-value="2196">Vapour Room</div>
                       <div class="item" data-value="182">Vapour Solutions</div>
                       <div class="item" data-value="2323">Vapour.co.uk</div>
+                      <div class="item" data-value="2392">VapourDepot</div>
                       <div class="item" data-value="1174">Vapouriz </div>
                       <div class="item" data-value="542">Vapourlites</div>
                       <div class="item" data-value="2362">Vapours Oven</div>
@@ -1934,7 +2010,9 @@ MORE BRANDS
                       <div class="item" data-value="1385">Vinyl Vapes</div>
                       <div class="item" data-value="1127">Violet Vapor</div>
                       <div class="item" data-value="238">Violet's Honest Vapor</div>
+                      <div class="item" data-value="2399">Viper Labs</div>
                       <div class="item" data-value="646">Viper Vape</div>
+                      <div class="item" data-value="2409">Viper-Vapor</div>
                       <div class="item" data-value="21">Virgin Vapor</div>
                       <div class="item" data-value="223">Virtu Vapes</div>
                       <div class="item" data-value="2378">Virtual Vape</div>
@@ -1945,6 +2023,7 @@ MORE BRANDS
                       <div class="item" data-value="1054">Vllusion</div>
                       <div class="item" data-value="76">Volcano Fine Electronic Cigarettes</div>
                       <div class="item" data-value="789">Volttron Vapes</div>
+                      <div class="item" data-value="2472">Voluptuous E-Juice</div>
                       <div class="item" data-value="748">Von Vape</div>
                       <div class="item" data-value="544">Voodoo Hooka</div>
                       <div class="item" data-value="344">Voodoo Vapers</div>
@@ -1958,8 +2037,7 @@ MORE BRANDS
                       <div class="item" data-value="318">Wasatch Vapor</div>
                       <div class="item" data-value="1361">We Three Vapors</div>
                       <div class="item" data-value="839">We Vape Here</div>
-                      <div class="item" data-value="1582">We Vape Juice</div>
-                      <div class="item" data-value="777">We Vapor</div>
+                      <div class="item" data-value="777">WeVapor</div>
                       <div class="item" data-value="696">West Coast Vape Supply</div>
                       <div class="item" data-value="997">WestCoast Vape Squad</div>
                       <div class="item" data-value="1468">Whiskey Rebellion</div>
@@ -1994,6 +2072,7 @@ MORE BRANDS
                       <div class="item" data-value="483">Zee Cigs</div>
                       <div class="item" data-value="272">Zeus E-Juice</div>
                       <div class="item" data-value="1007">Zidrate</div>
+                      <div class="item" data-value="2475">Ziggy's Smoke Shop</div>
                       <div class="item" data-value="803">Zikwid</div>
                       <div class="item" data-value="1123">Zodiac Devine Eliquids</div>
                       <div class="item" data-value="601">Zodist</div>
@@ -2032,3 +2111,4 @@ MORE BRANDS
                       <div class="item" data-value="2003">ifancyone.com</div>
                       <div class="item" data-value="1877">o2 Pur</div>
                       <div class="item" data-value="936">upStomp Vapes</div>
+                  </div>

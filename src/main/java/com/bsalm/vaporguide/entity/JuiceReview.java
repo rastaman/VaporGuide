@@ -55,7 +55,7 @@ public class JuiceReview
 	@Column(name = "rating")
 	private Integer rating;
 	
-	@Column(name = "review")
+	@Column(name = "review", columnDefinition="NVARCHAR(1024)")
 	private String review;
 	
 	@Column(name = "flavor")

@@ -56,6 +56,12 @@ public class ShopReview implements Serializable
 	@Column(name = "stock")
 	private Integer stockRating;
 	
+	@Column(name = "beginner")
+	private Boolean beginner;
+	
+	@Column(name = "advanced")
+	private Boolean advanced;
+	
 	//record keeping
 	@Column(name = "updated_datetime")
 	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
