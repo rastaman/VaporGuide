@@ -15,8 +15,6 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 import org.hibernate.annotations.Type;
-import org.jadira.usertype.dateandtime.joda.PersistentDateTime;
-import org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime;
 import org.joda.time.DateTime;
 
 @Entity
@@ -55,7 +53,7 @@ public class JuiceReview
 	@Column(name = "rating")
 	private Integer rating;
 	
-	@Column(name = "review", columnDefinition="NVARCHAR(1024)")
+	@Column(name = "review", columnDefinition="NVARCHAR(4096)")
 	private String review;
 	
 	@Column(name = "flavor")

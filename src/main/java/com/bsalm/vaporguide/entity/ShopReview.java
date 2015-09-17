@@ -3,30 +3,38 @@ package com.bsalm.vaporguide.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 import org.hibernate.annotations.Type;
 import org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime;
+import org.joda.time.DateTime;
 
 @Entity
-@Table(name = "shopreview")
+@Table(name = "shopreview", 
+	indexes = {
+		@Index(columnList = "shop_id", name = "shopreview_shopid_idx")
+	}, 
+	uniqueConstraints = {
+		@UniqueConstraint(columnNames={"shop_id", "user_id"})
+	}
+)
 public class ShopReview implements Serializable 
 {
 	// identifiers 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
-	
-	@Column(name = "name")
-	private String name;
 	
 	// parent tables
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -47,6 +55,9 @@ public class ShopReview implements Serializable
 	@Column(name = "rating")
 	private Integer rating;
 	
+	@Column(name = "review", columnDefinition="NVARCHAR(4096)")
+	private String review;
+	
 	@Column(name = "atmosphere")
 	private Integer atmosphereRating;
 
@@ -63,10 +74,10 @@ public class ShopReview implements Serializable
 	private Boolean advanced;
 	
 	//record keeping
-	@Column(name = "updated_datetime")
-	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-	private PersistentLocalDateTime updatedDate;
-	
+	@Basic(optional=false)
+	@Column(name="updated_datetime", columnDefinition="DATETIME(3) NOT NULL")
+	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentDateTime")
+	private DateTime updatedDate;
 	
 	//getters & setters 
 	public Integer getId() {
@@ -77,37 +88,21 @@ public class ShopReview implements Serializable
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public Integer getUser_id() {
+		return user_id;
 	}
 	
-	public Integer getArtist_id() {
+	public void setUser_id(Integer user_id) {
+		this.user_id = user_id;
+	}
+	
+	public Integer getShop_id() {
 		return shop_id;
 	}
 
-	public void setArtist_id(Integer shop_id) {
+	public void setShop_id(Integer shop_id) {
 		this.shop_id = shop_id;
 	}
-	
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
-
-//	public Integer getUser_id() {
-//		return user_id;
-//	}
-//	
-//	public void setUser_id(Integer user_id) {
-//		this.user_id = user_id;
-//	}
 	
 	public Integer getRating() {
 		return rating;
@@ -115,6 +110,30 @@ public class ShopReview implements Serializable
 
 	public void setRating(Integer rating) {
 		this.rating = rating;
+	}
+
+	public String getReview() {
+		return review;
+	}
+
+	public void setReview(String review) {
+		this.review = review;
+	}
+
+	public Boolean getBeginner() {
+		return beginner;
+	}
+
+	public void setBeginner(Boolean beginner) {
+		this.beginner = beginner;
+	}
+
+	public Boolean getAdvanced() {
+		return advanced;
+	}
+
+	public void setAdvanced(Boolean advanced) {
+		this.advanced = advanced;
 	}
 
 	public Integer getAtmosphereRating() {
@@ -141,11 +160,11 @@ public class ShopReview implements Serializable
 		this.stockRating = stockRating;
 	}
 
-	public PersistentLocalDateTime getUpdatedDate() {
+	public DateTime getUpdatedDate() {
 		return updatedDate;
 	}
 
-	public void setUpdatedDate(PersistentLocalDateTime updatedDate) {
+	public void setUpdatedDate(DateTime updatedDate) {
 		this.updatedDate = updatedDate;
 	}
 }

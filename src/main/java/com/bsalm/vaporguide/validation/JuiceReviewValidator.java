@@ -1,7 +1,5 @@
 package com.bsalm.vaporguide.validation;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
@@ -72,7 +70,7 @@ public class JuiceReviewValidator implements Validator {
 		//bounds
 		if (! integerBetween(1, 10, input.getRating()))
 			errors.rejectValue("rating", "value out of bounds");
-		if (! integerBetween(0, 1024, input.getReview().length()))
+		if (! integerBetween(0, 4096, input.getReview().length()))
 			errors.rejectValue("review", "length out of bounds");
 		
 		if (! integerBetween(1, 10, input.getFlavor()))
@@ -100,14 +98,7 @@ public class JuiceReviewValidator implements Validator {
 			errors.rejectValue("flavorTwoId", "value out of bounds");
 		if (! integerBetween(1, 19, input.getFlavorThreeId()))
 			errors.rejectValue("flavorThreeId", "value out of bounds");
-		
-		//passed validations - check db for duplicates
-//		if(errors.getErrorCount() == 0){
-//			List<JuiceReview> duplicateNames = juiceReviewService.findByUserIdAndJuiceId(input.getUser_id(), input.getJuice_id());
-//
-//			if(duplicateNames.size() > 0)
-//				errors.rejectValue("name", "already exists."); //TODO change this to some meaningful message
-//		}
+	
 	}
 	
 	private boolean integerBetween(int l, int r, int x)

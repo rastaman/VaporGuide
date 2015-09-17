@@ -1,7 +1,5 @@
 package com.bsalm.vaporguide.services;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.util.List;
 
 import javax.annotation.Resource;

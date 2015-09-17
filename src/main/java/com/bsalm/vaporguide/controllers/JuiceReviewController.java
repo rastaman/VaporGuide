@@ -77,7 +77,7 @@ public class JuiceReviewController {
 	}
 
 	@RequestMapping(value="/{id}", method=RequestMethod.PUT)
-	public JuiceReview editJuiceReview(@ModelAttribute JuiceReview juiceReview, @PathVariable Integer id,
+	public JuiceReview editJuiceReview(@ModelAttribute @Valid JuiceReview juiceReview, @PathVariable Integer id,
 			BindingResult result) {
 		
 		//If there's validation errors

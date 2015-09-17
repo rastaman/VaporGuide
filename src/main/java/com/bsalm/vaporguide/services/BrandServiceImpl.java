@@ -9,9 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.bsalm.vaporguide.entity.Brand;
 import com.bsalm.vaporguide.entity.Juice;
-import com.bsalm.vaporguide.entity.JuiceFlavor;
 import com.bsalm.vaporguide.repositories.BrandRepository;
-import com.bsalm.vaporguide.repositories.JuiceFlavorRepository;
 
 @Service
 public class BrandServiceImpl implements BrandService {

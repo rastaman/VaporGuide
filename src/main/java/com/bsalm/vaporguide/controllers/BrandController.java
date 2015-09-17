@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bsalm.vaporguide.entity.Brand;
 import com.bsalm.vaporguide.entity.Juice;
-import com.bsalm.vaporguide.entity.JuiceFlavor;
 import com.bsalm.vaporguide.services.BrandService;
-import com.bsalm.vaporguide.services.JuiceFlavorService;
-
 
 @RestController
 @RequestMapping(value="/brand")
