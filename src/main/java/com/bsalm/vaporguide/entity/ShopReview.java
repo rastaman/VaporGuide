@@ -59,13 +59,13 @@ public class ShopReview implements Serializable
 	private String review;
 	
 	@Column(name = "atmosphere")
-	private Integer atmosphereRating;
+	private Integer atmosphere;
 
 	@Column(name = "staff")
-	private Integer staffRating;
+	private Integer staff;
 	
 	@Column(name = "stock")
-	private Integer stockRating;
+	private Integer stock;
 	
 	@Column(name = "beginner")
 	private Boolean beginner;
@@ -136,28 +136,28 @@ public class ShopReview implements Serializable
 		this.advanced = advanced;
 	}
 
-	public Integer getAtmosphereRating() {
-		return atmosphereRating;
+	public Integer getAtmosphere() {
+		return atmosphere;
 	}
 
-	public void setAtmosphereRating(Integer atmosphereRating) {
-		this.atmosphereRating = atmosphereRating;
+	public void setAtmosphere(Integer atmosphere) {
+		this.atmosphere = atmosphere;
 	}
 
-	public Integer getStaffRating() {
-		return staffRating;
+	public Integer getStaff() {
+		return staff;
 	}
 
-	public void setStaffRating(Integer staffRating) {
-		this.staffRating = staffRating;
+	public void setStaff(Integer staff) {
+		this.staff = staff;
 	}
 
-	public Integer getStockRating() {
-		return stockRating;
+	public Integer getStock() {
+		return stock;
 	}
 
-	public void setStockRating(Integer stockRating) {
-		this.stockRating = stockRating;
+	public void setStock(Integer stock) {
+		this.stock = stock;
 	}
 
 	public DateTime getUpdatedDate() {

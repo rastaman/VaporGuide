@@ -2,7 +2,6 @@ package com.bsalm.vaporguide.services;
 
 import java.util.List;
 
-import com.bsalm.vaporguide.entity.JuiceReview;
 import com.bsalm.vaporguide.entity.ShopReview;
 import com.bsalm.vaporguide.exceptions.ShopReviewNotFoundException;
 public interface ShopReviewService {

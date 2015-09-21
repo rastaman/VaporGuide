@@ -39,7 +39,7 @@ public class JuiceReviewController {
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public List<JuiceReview> getAllJuiceReviews() {
 		return juiceReviewService.findAll();
-	}
+	} 
 
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public JuiceReview getJuiceReview(@PathVariable Integer id) {
